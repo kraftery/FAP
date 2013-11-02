@@ -22,6 +22,12 @@
 		B3481D6618256F1900002E0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4518256F1800002E0F /* UIKit.framework */; };
 		B3481D6E18256F1900002E0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3481D6C18256F1900002E0F /* InfoPlist.strings */; };
 		B3481D7018256F1900002E0F /* FAPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D6F18256F1900002E0F /* FAPTests.m */; };
+		B3481D7B1825732A00002E0F /* MyScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D7A1825732A00002E0F /* MyScheduleViewController.m */; };
+		B3481D81182573AC00002E0F /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D80182573AC00002E0F /* EventsViewController.m */; };
+		B3481D841825741F00002E0F /* DiningHoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D831825741F00002E0F /* DiningHoursViewController.m */; };
+		B3481D871825745000002E0F /* LibraryHoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D861825745000002E0F /* LibraryHoursViewController.m */; };
+		B3481D8A18257ED200002E0F /* GymHoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D8918257ED200002E0F /* GymHoursViewController.m */; };
+		B3481D8D18257EEE00002E0F /* BusScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D8C18257EEE00002E0F /* BusScheduleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,18 @@
 		B3481D6B18256F1900002E0F /* FAPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FAPTests-Info.plist"; sourceTree = "<group>"; };
 		B3481D6D18256F1900002E0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3481D6F18256F1900002E0F /* FAPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAPTests.m; sourceTree = "<group>"; };
+		B3481D791825732A00002E0F /* MyScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScheduleViewController.h; sourceTree = "<group>"; };
+		B3481D7A1825732A00002E0F /* MyScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScheduleViewController.m; sourceTree = "<group>"; };
+		B3481D7F182573AC00002E0F /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		B3481D80182573AC00002E0F /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		B3481D821825741F00002E0F /* DiningHoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiningHoursViewController.h; sourceTree = "<group>"; };
+		B3481D831825741F00002E0F /* DiningHoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiningHoursViewController.m; sourceTree = "<group>"; };
+		B3481D851825745000002E0F /* LibraryHoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHoursViewController.h; sourceTree = "<group>"; };
+		B3481D861825745000002E0F /* LibraryHoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryHoursViewController.m; sourceTree = "<group>"; };
+		B3481D8818257ED200002E0F /* GymHoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymHoursViewController.h; sourceTree = "<group>"; };
+		B3481D8918257ED200002E0F /* GymHoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymHoursViewController.m; sourceTree = "<group>"; };
+		B3481D8B18257EEE00002E0F /* BusScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusScheduleViewController.h; sourceTree = "<group>"; };
+		B3481D8C18257EEE00002E0F /* BusScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusScheduleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +140,18 @@
 				B3481D5A18256F1900002E0F /* FAPViewController.m */,
 				B3481D5C18256F1900002E0F /* Images.xcassets */,
 				B3481D4818256F1800002E0F /* Supporting Files */,
+				B3481D791825732A00002E0F /* MyScheduleViewController.h */,
+				B3481D7A1825732A00002E0F /* MyScheduleViewController.m */,
+				B3481D7F182573AC00002E0F /* EventsViewController.h */,
+				B3481D80182573AC00002E0F /* EventsViewController.m */,
+				B3481D821825741F00002E0F /* DiningHoursViewController.h */,
+				B3481D831825741F00002E0F /* DiningHoursViewController.m */,
+				B3481D851825745000002E0F /* LibraryHoursViewController.h */,
+				B3481D861825745000002E0F /* LibraryHoursViewController.m */,
+				B3481D8818257ED200002E0F /* GymHoursViewController.h */,
+				B3481D8918257ED200002E0F /* GymHoursViewController.m */,
+				B3481D8B18257EEE00002E0F /* BusScheduleViewController.h */,
+				B3481D8C18257EEE00002E0F /* BusScheduleViewController.m */,
 			);
 			path = FAP;
 			sourceTree = "<group>";
@@ -254,9 +284,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3481D8A18257ED200002E0F /* GymHoursViewController.m in Sources */,
 				B3481D5B18256F1900002E0F /* FAPViewController.m in Sources */,
+				B3481D81182573AC00002E0F /* EventsViewController.m in Sources */,
+				B3481D871825745000002E0F /* LibraryHoursViewController.m in Sources */,
 				B3481D5218256F1900002E0F /* FAPAppDelegate.m in Sources */,
+				B3481D8D18257EEE00002E0F /* BusScheduleViewController.m in Sources */,
+				B3481D841825741F00002E0F /* DiningHoursViewController.m in Sources */,
 				B3481D4E18256F1900002E0F /* main.m in Sources */,
+				B3481D7B1825732A00002E0F /* MyScheduleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
