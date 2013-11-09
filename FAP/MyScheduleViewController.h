@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyScheduleViewController : UIViewController
+@interface MyScheduleViewController : UIViewController {
+    
+    NSMutableArray *myExams;
+}
+
+@property(nonatomic, strong) IBOutlet UITableView *tableView;
+
+-(IBAction)addButtonClick:(id)sender;
 
 @end
