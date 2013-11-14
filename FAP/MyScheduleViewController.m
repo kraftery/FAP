@@ -31,9 +31,15 @@
     
     if(buttonIndex != [alertView cancelButtonIndex]) {
         NSString *inputString = [[alertView textFieldAtIndex:0] text];
-        [myExams addObject:inputString];
+        [myExams addObject:[self getExamInfo:inputString]];
         [tableView reloadData];
     }
+}
+
+//Take the class entered, send get request to get the class's exam info, return that info as NSString
+-(NSString *)getExamInfo:(NSString *)className {
+    
+    return className;//until we know how to implement this method
 }
 
 
@@ -52,6 +58,8 @@
 	// Do any additional setup after loading the view.
     
     self.title = @"My Schedule";
+    
+    myExams = [[NSMutableArray alloc] init];
     
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithTitle:@"Add"
                                                                   style:UIBarButtonItemStyleBordered target:self
@@ -85,9 +93,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        }
     }
     
     cell.textLabel.text = [myExams objectAtIndex:indexPath.row];
