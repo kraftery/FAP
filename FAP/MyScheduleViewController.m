@@ -32,6 +32,10 @@
     if(buttonIndex != [alertView cancelButtonIndex]) {
         NSString *inputString = [[alertView textFieldAtIndex:0] text];
         [myExams addObject:[self getExamInfo:inputString]];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSArray *exams = [[NSArray alloc] initWithArray:myExams];
+        [defaults setObject:exams forKey:@"exams"];
+        [defaults synchronize];
         [tableView reloadData];
     }
 }
@@ -60,6 +64,12 @@
     self.title = @"My Schedule";
     
     myExams = [[NSMutableArray alloc] init];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *exams = [defaults objectForKey:@"exams"];
+    for (NSString *s in exams) {
+        [myExams addObject:s];
+    }
     
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithTitle:@"Add"
                                                                   style:UIBarButtonItemStyleBordered target:self

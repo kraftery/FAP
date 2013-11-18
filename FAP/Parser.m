@@ -19,13 +19,13 @@
 }*/
 
 //This method validates the input given to us by the user
-(int) validateInput: (NSString *) class{
+-(int) validateInput: (NSString *) class{
     if([class length] == 0){//if nothing was put in the text field
         return 0;
     }
-    else if([class length] > 0 && [class classExists] == false){
+    else if([class length] > 0 && [self classExists:class] == false){
         // so if there's a string but the class doesnt exist or something
-        return -1
+        return -1;
     }
     return 1; //if it's actually correct
 }
@@ -33,7 +33,7 @@
 //checks the DB to see if the class exists
 -(BOOL) classExists: (NSString *) class{
     //We'll check our database and see if the class exists
-    return false
+    return false;
 }
 
 /*This gets the json file and actually gets the fields from the class keys. THe json file should look like this
@@ -65,8 +65,8 @@
     else{
         NSDictionary *current_class = classHash[@"WHATEVER KEY WE PUT FOR THE CLASS A PARTICULAR CLASS"];
             //this is a prototype of how we will get the fields
-        (NSSting *) start_time = current_class[@"start"]; //assuming we have a field called start.
-        (NSSting *) end_time = current_class[@"end"];
+        NSString *start_time = current_class[@"start"]; //assuming we have a field called start.
+        NSString *end_time = current_class[@"end"];
     }
 }
 
