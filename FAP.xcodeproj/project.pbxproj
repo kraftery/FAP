@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94F0F73D183A77C7001DF84B /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F0F73C183A77C7001DF84B /* Parser.m */; };
 		B3481D4218256F1800002E0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4118256F1800002E0F /* Foundation.framework */; };
 		B3481D4418256F1800002E0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4318256F1800002E0F /* CoreGraphics.framework */; };
 		B3481D4618256F1800002E0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4518256F1800002E0F /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94F0F73B183A77C7001DF84B /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		94F0F73C183A77C7001DF84B /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
 		B3481D3E18256F1800002E0F /* FAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D4118256F1800002E0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3481D4318256F1800002E0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -152,6 +155,8 @@
 				B3481D8918257ED200002E0F /* GymHoursViewController.m */,
 				B3481D8B18257EEE00002E0F /* BusScheduleViewController.h */,
 				B3481D8C18257EEE00002E0F /* BusScheduleViewController.m */,
+				94F0F73B183A77C7001DF84B /* Parser.h */,
+				94F0F73C183A77C7001DF84B /* Parser.m */,
 			);
 			path = FAP;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				B3481D841825741F00002E0F /* DiningHoursViewController.m in Sources */,
 				B3481D4E18256F1900002E0F /* main.m in Sources */,
 				B3481D7B1825732A00002E0F /* MyScheduleViewController.m in Sources */,
+				94F0F73D183A77C7001DF84B /* Parser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +517,7 @@
 				B3481D7518256F1900002E0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3481D7618256F1900002E0F /* Build configuration list for PBXNativeTarget "FAPTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +526,7 @@
 				B3481D7818256F1900002E0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
