@@ -47,26 +47,29 @@
             "room" : "Hornbake 1234"
         }
 */
--(void) parse{
+-(NSArray) parse{
 
     NSData *jsonFile = [[NSData alloc] initWithContentsOfURL:
                     [NSURL URLWithString:@"URL To Json here"]];// THis might be changed, we just need to get the json somehow.
 
-    NSError *error;
-    NSDictionary *classHash = [NSJSONSerialization
+    NSError *error = nil;
+    NSArray *classArray = [NSJSONSerialization
                            JSONObjectWithData: jsonFile
-                           options: NSJSONReadingMutableContainers
+                           options: nil
                            error: &error
                            ];
 
     if(error){
-        NSLog(@"%@", [error localizedDescription]);
+        return nil;
+        /*
+         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"PUT ERROR MESSAGE HERE" delegate:nil cancelButtonTitle:@"Dismiss" otherButonTitles:nil];
+         [errorView show];
+         */
+        //NSLog(@"%@", [error localizedDescription]);
     }
     else{
-        NSDictionary *current_class = classHash[@"WHATEVER KEY WE PUT FOR THE CLASS A PARTICULAR CLASS"];
-            //this is a prototype of how we will get the fields
-        NSString *start_time = current_class[@"start"]; //assuming we have a field called start.
-        NSString *end_time = current_class[@"end"];
+        //I have to return the array here
+        //NSString *session = [[classArray objectAtIndex:indexPath.row] objectForKey:@"session"]; //this is how we get the session data
     }
 }
 
