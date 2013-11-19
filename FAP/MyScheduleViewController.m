@@ -110,6 +110,19 @@
     return cell;
 }
 
+// Override to allow swipe to delete method
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [myExams removeObject:[myExams objectAtIndex:indexPath.row]];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSArray *exams = [[NSArray alloc] initWithArray:myExams];
+        [defaults setObject:exams forKey:@"exams"];
+        [defaults synchronize];
+        [tableView reloadData];
+    }
+}
+
 #pragma mark-
 #pragma mark Table view delegate
 
