@@ -47,7 +47,7 @@
             "room" : "Hornbake 1234"
         }
 */
--(NSArray) parse{
+-(NSArray *) parse{
 
     NSData *jsonFile = [[NSData alloc] initWithContentsOfURL:
                     [NSURL URLWithString:@"URL To Json here"]];// THis might be changed, we just need to get the json somehow.
@@ -71,6 +71,8 @@
         //I have to return the array here
         //NSString *session = [[classArray objectAtIndex:indexPath.row] objectForKey:@"session"]; //this is how we get the session data
     }
+    
+    return classArray;
 }
 
 @end
