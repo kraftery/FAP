@@ -131,5 +131,44 @@
     //has to be included, but it has no use currently
 }
 
+// I JUST UPLOADED THIS PART. SINCE I CANT COMPILE IT'S PROB GONNA HAVE ERRORS SO PLEASE CHECK AND FIX
+//This method validates the input given to us by the user
+-(int) validateInput: (NSString *) class{
+    if([class length] == 0 || class == nil){//if nothing was put in the text field
+        return 0;
+    }
+    return 1;
+}
+
+
+-(NSArray *) parse (NSString *) className{
+    //WE DO THE CONNECTION HERE AND SEND THE STRING TO THE SERVER TO GET THE JSON FILE
+    NSData *jsonFile = [[NSData alloc] initWithContentsOfURL:
+                        [NSURL URLWithString:@"URL To Json here"]];// THis might be changed, we just need to get the json somehow.
+    
+    NSError *error = nil;
+    NSArray *classArray = [NSJSONSerialization
+                           JSONObjectWithData: jsonFile
+                           options: nil
+                           error: &error
+                           ];
+    
+    if(error){
+        return nil;
+        //This code below pops up an error dialog box saying we couldnt get the file downloaded. when we call parse and it returns
+        //nil, then we will use the code below to display an error
+        
+        /*
+         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"PUT ERROR MESSAGE HERE" delegate:nil cancelButtonTitle:@"Dismiss" otherButonTitles:nil];
+         [errorView show];
+         */
+    }
+    else{
+        //I have to return the array here
+        //NSString *session = [[classArray objectAtIndex:indexPath.row] objectForKey:@"session"]; //this is how we get the session data
+    }
+    
+    return classArray;
+}
 
 @end
