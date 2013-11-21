@@ -141,7 +141,7 @@
 }
 
 
--(NSArray *) parse (NSString *) className{
+-(NSMutableArray *) parse (NSString *) className{
     //WE DO THE CONNECTION HERE AND SEND THE STRING TO THE SERVER TO GET THE JSON FILE
     NSData *jsonFile = [[NSData alloc] initWithContentsOfURL:
                         [NSURL URLWithString:@"URL To Json here"]];// THis might be changed, we just need to get the json somehow.
