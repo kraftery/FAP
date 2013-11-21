@@ -147,9 +147,10 @@
                         [NSURL URLWithString:@"URL To Json here"]];// THis might be changed, we just need to get the json somehow.
     
     NSError *error = nil;
-    NSArray *classArray = [NSJSONSerialization
+    //this is an array of dictionaries aka hashes
+    NSMutableArray *classArray = [NSJSONSerialization
                            JSONObjectWithData: jsonFile
-                           options: nil
+                           options: NSJSONReadingMutableContainers
                            error: &error
                            ];
     
@@ -164,11 +165,23 @@
          */
     }
     else{
-        //I have to return the array here
-        //NSString *session = [[classArray objectAtIndex:indexPath.row] objectForKey:@"session"]; //this is how we get the session data
+        //we will return a 2D arrray
+        NSMutableArray *final = [NSMutableArray alloc] init]; //this will contain arrays as in it's indexes => it's gonna be a 2d array
+        for (NSDictionary *dictionary in classArray){
+            NSString *section = [dictionary objectForKey:@"section"];
+            NSString *day = [dictionary objectForKey:@"day"];
+            NSString *time = [dictionary objectForKey:@"time"];
+            NSString *location = [dictionary objectForKey:@"location"];
+            NSString *instructor = [dictionary objectForKey:@"instructor"];
+            
+            //Put all the above strings in an array
+            NSArray *final_object = [NSArray initWithObjects:section, day, time, location, instructor, nil];
+            [final addObject:final_object];
+            
+        } //end for loop
     }
     
-    return classArray;
+    return final;
 }
 
 @end
