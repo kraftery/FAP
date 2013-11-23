@@ -5,35 +5,42 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "splash4.png",
       "scale" : "2x"
     },
     {
-      "extent" : "full-screen",
+      "orientation" : "portrait",
       "idiom" : "iphone",
-      "subtype" : "retina4",
-      "filename" : "splash3.png",
+      "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "orientation" : "portrait",
+      "subtype" : "retina4",
       "scale" : "2x"
     },
     {
       "orientation" : "portrait",
-      "idiom" : "iphone",
+      "idiom" : "ipad",
       "extent" : "full-screen",
+      "minimum-system-version" : "7.0",
+      "scale" : "1x"
+    },
+    {
+      "orientation" : "landscape",
+      "idiom" : "ipad",
+      "extent" : "full-screen",
+      "minimum-system-version" : "7.0",
       "scale" : "1x"
     },
     {
       "orientation" : "portrait",
-      "idiom" : "iphone",
+      "idiom" : "ipad",
       "extent" : "full-screen",
+      "minimum-system-version" : "7.0",
       "scale" : "2x"
     },
     {
-      "orientation" : "portrait",
-      "idiom" : "iphone",
+      "orientation" : "landscape",
+      "idiom" : "ipad",
       "extent" : "full-screen",
-      "subtype" : "retina4",
+      "minimum-system-version" : "7.0",
       "scale" : "2x"
     }
   ],

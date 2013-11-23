@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68A8A63F1841537F00806031 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A8A63E1841537F00806031 /* Images-2.xcassets */; };
 		B3481D4218256F1800002E0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4118256F1800002E0F /* Foundation.framework */; };
 		B3481D4418256F1800002E0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4318256F1800002E0F /* CoreGraphics.framework */; };
 		B3481D4618256F1800002E0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4518256F1800002E0F /* UIKit.framework */; };
@@ -16,7 +17,6 @@
 		B3481D5518256F1900002E0F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3481D5318256F1900002E0F /* Main_iPhone.storyboard */; };
 		B3481D5818256F1900002E0F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3481D5618256F1900002E0F /* Main_iPad.storyboard */; };
 		B3481D5B18256F1900002E0F /* FAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D5A18256F1900002E0F /* FAPViewController.m */; };
-		B3481D5D18256F1900002E0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3481D5C18256F1900002E0F /* Images.xcassets */; };
 		B3481D6418256F1900002E0F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D6318256F1900002E0F /* XCTest.framework */; };
 		B3481D6518256F1900002E0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4118256F1800002E0F /* Foundation.framework */; };
 		B3481D6618256F1900002E0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4518256F1800002E0F /* UIKit.framework */; };
@@ -40,6 +40,12 @@
 		BD04F6F6183D8CAF00646586 /* iconSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6EC183D8CAF00646586 /* iconSmall.png */; };
 		BD04F6F7183D8CAF00646586 /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6ED183D8CAF00646586 /* library.png */; };
 		BD04F6F8183D8CAF00646586 /* party.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6EE183D8CAF00646586 /* party.png */; };
+		BD04F70B1841324100646586 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F70A1841324100646586 /* splash.png */; };
+		BD04F70D1841351D00646586 /* splash3.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F70C1841351D00646586 /* splash3.png */; };
+		BD04F70F1841372600646586 /* splash4.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F70E1841372600646586 /* splash4.png */; };
+		BD04F7141841448B00646586 /* eppley.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BD04F7111841448B00646586 /* eppley.JPG */; };
+		BD04F7151841448B00646586 /* ritchie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD04F7121841448B00646586 /* ritchie.jpg */; };
+		BD04F7161841448B00646586 /* sph.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BD04F7131841448B00646586 /* sph.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68A8A63E1841537F00806031 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		B3481D3E18256F1800002E0F /* FAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D4118256F1800002E0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3481D4318256F1800002E0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,7 +74,6 @@
 		B3481D5718256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		B3481D5918256F1900002E0F /* FAPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAPViewController.h; sourceTree = "<group>"; };
 		B3481D5A18256F1900002E0F /* FAPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAPViewController.m; sourceTree = "<group>"; };
-		B3481D5C18256F1900002E0F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B3481D6218256F1900002E0F /* FAPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D6318256F1900002E0F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B3481D6B18256F1900002E0F /* FAPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FAPTests-Info.plist"; sourceTree = "<group>"; };
@@ -98,6 +104,13 @@
 		BD04F6EC183D8CAF00646586 /* iconSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconSmall.png; path = FAP/icons/iconSmall.png; sourceTree = SOURCE_ROOT; };
 		BD04F6ED183D8CAF00646586 /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = library.png; path = FAP/icons/library.png; sourceTree = SOURCE_ROOT; };
 		BD04F6EE183D8CAF00646586 /* party.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = party.png; path = FAP/icons/party.png; sourceTree = SOURCE_ROOT; };
+		BD04F7011841198200646586 /* FAP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FAP.xcodeproj; sourceTree = "<group>"; };
+		BD04F70A1841324100646586 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = FAP/icons/splash.png; sourceTree = SOURCE_ROOT; };
+		BD04F70C1841351D00646586 /* splash3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash3.png; path = icons/splash3.png; sourceTree = "<group>"; };
+		BD04F70E1841372600646586 /* splash4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash4.png; path = FAP/icons/splash4.png; sourceTree = SOURCE_ROOT; };
+		BD04F7111841448B00646586 /* eppley.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eppley.JPG; sourceTree = "<group>"; };
+		BD04F7121841448B00646586 /* ritchie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ritchie.jpg; sourceTree = "<group>"; };
+		BD04F7131841448B00646586 /* sph.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sph.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +140,7 @@
 		B3481D3518256F1800002E0F = {
 			isa = PBXGroup;
 			children = (
+				BD04F7011841198200646586 /* FAP.xcodeproj */,
 				B3481D4718256F1800002E0F /* FAP */,
 				B3481D6918256F1900002E0F /* FAPTests */,
 				B3481D4018256F1800002E0F /* Frameworks */,
@@ -157,13 +171,13 @@
 		B3481D4718256F1800002E0F /* FAP */ = {
 			isa = PBXGroup;
 			children = (
+				BD04F70C1841351D00646586 /* splash3.png */,
 				B3481D5018256F1900002E0F /* FAPAppDelegate.h */,
 				B3481D5118256F1900002E0F /* FAPAppDelegate.m */,
 				B3481D5318256F1900002E0F /* Main_iPhone.storyboard */,
 				B3481D5618256F1900002E0F /* Main_iPad.storyboard */,
 				B3481D5918256F1900002E0F /* FAPViewController.h */,
 				B3481D5A18256F1900002E0F /* FAPViewController.m */,
-				B3481D5C18256F1900002E0F /* Images.xcassets */,
 				B3481D4818256F1800002E0F /* Supporting Files */,
 				B3481D791825732A00002E0F /* MyScheduleViewController.h */,
 				B3481D7A1825732A00002E0F /* MyScheduleViewController.m */,
@@ -177,9 +191,13 @@
 				B3481D8918257ED200002E0F /* GymHoursViewController.m */,
 				B3481D8B18257EEE00002E0F /* BusScheduleViewController.h */,
 				B3481D8C18257EEE00002E0F /* BusScheduleViewController.m */,
+<<<<<<< HEAD
 				B35E75631841419D006055BF /* SelectedLibraryViewController.h */,
 				B35E75641841419D006055BF /* SelectedLibraryViewController.m */,
 				B35E75651841419D006055BF /* SelectedLibraryViewController.xib */,
+=======
+				68A8A63E1841537F00806031 /* Images-2.xcassets */,
+>>>>>>> 92969d213683e1ecfcf6e429777b4fdf67c66ef4
 			);
 			path = FAP;
 			sourceTree = "<group>";
@@ -187,6 +205,7 @@
 		B3481D4818256F1800002E0F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD04F7101841448A00646586 /* recCenters */,
 				BD04F6D0183D87AA00646586 /* icons */,
 				B3481D4918256F1800002E0F /* FAP-Info.plist */,
 				B3481D4A18256F1800002E0F /* InfoPlist.strings */,
@@ -217,6 +236,8 @@
 		BD04F6D0183D87AA00646586 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				BD04F70E1841372600646586 /* splash4.png */,
+				BD04F70A1841324100646586 /* splash.png */,
 				BD04F6E5183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg */,
 				BD04F6E6183D8CAF00646586 /* bus.png */,
 				BD04F6E7183D8CAF00646586 /* cal.png */,
@@ -230,6 +251,21 @@
 			);
 			name = icons;
 			path = ../../Documents/FinalsApp/icons;
+			sourceTree = "<group>";
+		};
+		BD04F7021841198200646586 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD04F7101841448A00646586 /* recCenters */ = {
+			isa = PBXGroup;
+			children = (
+				BD04F7111841448B00646586 /* eppley.JPG */,
+				BD04F7121841448B00646586 /* ritchie.jpg */,
+				BD04F7131841448B00646586 /* sph.JPG */,
+			);
+			path = recCenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +332,12 @@
 			mainGroup = B3481D3518256F1800002E0F;
 			productRefGroup = B3481D3F18256F1800002E0F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BD04F7021841198200646586 /* Products */;
+					ProjectRef = BD04F7011841198200646586 /* FAP.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B3481D3D18256F1800002E0F /* FAP */,
@@ -312,17 +354,23 @@
 				BD04F6F3183D8CAF00646586 /* gym.png in Resources */,
 				B35E75671841419E006055BF /* SelectedLibraryViewController.xib in Resources */,
 				BD04F6F0183D8CAF00646586 /* bus.png in Resources */,
+				BD04F7141841448B00646586 /* eppley.JPG in Resources */,
 				B3481D5818256F1900002E0F /* Main_iPad.storyboard in Resources */,
 				BD04F6EF183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg in Resources */,
+				BD04F70B1841324100646586 /* splash.png in Resources */,
 				BD04F6F6183D8CAF00646586 /* iconSmall.png in Resources */,
 				BD04F6F1183D8CAF00646586 /* cal.png in Resources */,
-				B3481D5D18256F1900002E0F /* Images.xcassets in Resources */,
 				BD04F6F2183D8CAF00646586 /* food.png in Resources */,
 				B3481D5518256F1900002E0F /* Main_iPhone.storyboard in Resources */,
+				BD04F7151841448B00646586 /* ritchie.jpg in Resources */,
 				BD04F6F4183D8CAF00646586 /* icon.png in Resources */,
 				B3481D4C18256F1800002E0F /* InfoPlist.strings in Resources */,
+				BD04F70F1841372600646586 /* splash4.png in Resources */,
+				BD04F70D1841351D00646586 /* splash3.png in Resources */,
 				BD04F6F8183D8CAF00646586 /* party.png in Resources */,
+				BD04F7161841448B00646586 /* sph.JPG in Resources */,
 				BD04F6F7183D8CAF00646586 /* library.png in Resources */,
+				68A8A63F1841537F00806031 /* Images-2.xcassets in Resources */,
 				BD04F6F5183D8CAF00646586 /* iconBig.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,10 +536,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FAP/FAP-Prefix.pch";
 				INFOPLIST_FILE = "FAP/FAP-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/davidlobosco/CollapsableTableViewTestProject/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -501,10 +551,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FAP/FAP-Prefix.pch";
 				INFOPLIST_FILE = "FAP/FAP-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/davidlobosco/CollapsableTableViewTestProject/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

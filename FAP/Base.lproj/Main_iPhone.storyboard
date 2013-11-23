@@ -114,7 +114,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.96482376000000003" blue="0.2934600041" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.98431378602981567" green="0.82745105028152466" blue="0.19607844948768616" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="DI5-xv-wvS"/>
                 </viewController>
@@ -166,13 +166,71 @@
                     <view key="view" contentMode="scaleToFill" id="myf-Q6-qGT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eppley.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="8by-oE-H0Q">
+                                <rect key="frame" x="12" y="83" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ritchie.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x7M-iI-EIp">
+                                <rect key="frame" x="12" y="223" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sph.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="RzA-ux-DPZ">
+                                <rect key="frame" x="12" y="359" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Eppley" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7i-D6-uZp">
+                                <rect key="frame" x="123" y="83" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ritchie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYB-0J-OQ4">
+                                <rect key="frame" x="123" y="223" width="96" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="School of Public Health" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2C-3L-RQa">
+                                <rect key="frame" x="123" y="359" width="220" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hours:                        6AM - midnight" translatesAutoresizingMaskIntoConstraints="NO" id="W6K-GC-rOF">
+                                <rect key="frame" x="123" y="112" width="141" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hours:                        6AM - midnight" translatesAutoresizingMaskIntoConstraints="NO" id="MfQ-Xc-MxS">
+                                <rect key="frame" x="123" y="252" width="141" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hours:                        6AM - midnight" translatesAutoresizingMaskIntoConstraints="NO" id="3um-2K-zqR">
+                                <rect key="frame" x="123" y="388" width="141" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431378602981567" green="0.82745105028152466" blue="0.19607844948768616" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="O7i-D6-uZp" firstAttribute="leading" secondItem="a2C-3L-RQa" secondAttribute="leading" constant="3" id="0Bp-db-Ylg"/>
+                            <constraint firstItem="O7i-D6-uZp" firstAttribute="leading" secondItem="rYB-0J-OQ4" secondAttribute="leading" constant="3" id="u1i-o0-41K"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5ex-oz-Uwa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhB-w3-KkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2493" y="471"/>
+            <point key="canvasLocation" x="2604" y="570"/>
         </scene>
         <!--Bus Schedule View Controller-->
         <scene sceneID="i7z-p1-V4S">
@@ -185,9 +243,30 @@
                     <view key="view" contentMode="scaleToFill" id="4QY-vJ-Qw8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WARNING: Times marked with X are not running during finals week." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="1YU-qB-41N">
+                                <rect key="frame" x="0.0" y="65" width="320" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TwX-fX-bzb">
+                                <rect key="frame" x="0.0" y="109" width="320" height="371"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="IC1-Gn-RVo" id="cGv-5p-n44"/>
+                                    <outlet property="delegate" destination="IC1-Gn-RVo" id="Ddx-fj-q4a"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="YED-zn-XeH"/>
+                    <connections>
+                        <outlet property="warningLabel" destination="1YU-qB-41N" id="Fd0-dt-dKG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HV1-dD-04E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -286,10 +365,13 @@
     <resources>
         <image name="bus.png" width="512" height="512"/>
         <image name="cal.png" width="512" height="512"/>
+        <image name="eppley.JPG" width="640" height="480"/>
         <image name="food.png" width="512" height="512"/>
         <image name="gym.png" width="512" height="512"/>
         <image name="library.png" width="512" height="512"/>
         <image name="party.png" width="512" height="512"/>
+        <image name="ritchie.jpg" width="250" height="250"/>
+        <image name="sph.JPG" width="640" height="480"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
