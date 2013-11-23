@@ -59,7 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		68A8A63E1841537F00806031 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		68A8A63E1841537F00806031 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		B3481D3E18256F1800002E0F /* FAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D4118256F1800002E0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3481D4318256F1800002E0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,11 +70,11 @@
 		B3481D4F18256F1900002E0F /* FAP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FAP-Prefix.pch"; sourceTree = "<group>"; };
 		B3481D5018256F1900002E0F /* FAPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAPAppDelegate.h; sourceTree = "<group>"; };
 		B3481D5118256F1900002E0F /* FAPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAPAppDelegate.m; sourceTree = "<group>"; };
-		B3481D5418256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		B3481D5718256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B3481D5418256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B3481D5718256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		B3481D5918256F1900002E0F /* FAPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAPViewController.h; sourceTree = "<group>"; };
 		B3481D5A18256F1900002E0F /* FAPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAPViewController.m; sourceTree = "<group>"; };
-		B3481D6218256F1900002E0F /* FAPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3481D6218256F1900002E0F /* FAPTests */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FAPTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D6318256F1900002E0F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B3481D6B18256F1900002E0F /* FAPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FAPTests-Info.plist"; sourceTree = "<group>"; };
 		B3481D6D18256F1900002E0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				B3481D3E18256F1800002E0F /* FAP.app */,
-				B3481D6218256F1900002E0F /* FAPTests.xctest */,
+				B3481D6218256F1900002E0F /* FAPTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,13 +191,10 @@
 				B3481D8918257ED200002E0F /* GymHoursViewController.m */,
 				B3481D8B18257EEE00002E0F /* BusScheduleViewController.h */,
 				B3481D8C18257EEE00002E0F /* BusScheduleViewController.m */,
-<<<<<<< HEAD
 				B35E75631841419D006055BF /* SelectedLibraryViewController.h */,
 				B35E75641841419D006055BF /* SelectedLibraryViewController.m */,
 				B35E75651841419D006055BF /* SelectedLibraryViewController.xib */,
-=======
 				68A8A63E1841537F00806031 /* Images-2.xcassets */,
->>>>>>> 92969d213683e1ecfcf6e429777b4fdf67c66ef4
 			);
 			path = FAP;
 			sourceTree = "<group>";
@@ -255,6 +252,8 @@
 		};
 		BD04F7021841198200646586 /* Products */ = {
 			isa = PBXGroup;
+			children = (
+			);
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -303,7 +302,7 @@
 			);
 			name = FAPTests;
 			productName = FAPTests;
-			productReference = B3481D6218256F1900002E0F /* FAPTests.xctest */;
+			productReference = B3481D6218256F1900002E0F /* FAPTests */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */

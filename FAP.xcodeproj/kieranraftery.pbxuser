@@ -1,0 +1,91 @@
+// !$*UTF8*$!
+{
+	B346305A1841674000402C38 /* FAP */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = FAP;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	B34630741841675500402C38 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	B34630751841675500402C38 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	B3481D3618256F1800002E0F /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = B346305A1841674000402C38 /* FAP */;
+		activeTarget = B3481D3D18256F1800002E0F /* FAP */;
+		codeSenseManager = B34630751841675500402C38 /* Code sense */;
+		executables = (
+			B346305A1841674000402C38 /* FAP */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					356,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 406939457;
+			PBXWorkspaceStateSaveDate = 406939457;
+		};
+		sourceControlManager = B34630741841675500402C38 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	B3481D3D18256F1800002E0F /* FAP */ = {
+		activeExec = 0;
+		executables = (
+			B346305A1841674000402C38 /* FAP */,
+		);
+	};
+	B3481D6118256F1900002E0F /* FAPTests */ = {
+		activeExec = 0;
+	};
+}
