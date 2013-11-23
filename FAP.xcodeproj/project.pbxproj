@@ -16,7 +16,6 @@
 		B3481D5518256F1900002E0F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3481D5318256F1900002E0F /* Main_iPhone.storyboard */; };
 		B3481D5818256F1900002E0F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3481D5618256F1900002E0F /* Main_iPad.storyboard */; };
 		B3481D5B18256F1900002E0F /* FAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D5A18256F1900002E0F /* FAPViewController.m */; };
-		B3481D5D18256F1900002E0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3481D5C18256F1900002E0F /* Images.xcassets */; };
 		B3481D6418256F1900002E0F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D6318256F1900002E0F /* XCTest.framework */; };
 		B3481D6518256F1900002E0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4118256F1800002E0F /* Foundation.framework */; };
 		B3481D6618256F1900002E0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4518256F1800002E0F /* UIKit.framework */; };
@@ -38,7 +37,6 @@
 		BD04F6F6183D8CAF00646586 /* iconSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6EC183D8CAF00646586 /* iconSmall.png */; };
 		BD04F6F7183D8CAF00646586 /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6ED183D8CAF00646586 /* library.png */; };
 		BD04F6F8183D8CAF00646586 /* party.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6EE183D8CAF00646586 /* party.png */; };
-		BD04F70518411A0300646586 /* CollapsableTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD04F70418411A0300646586 /* CollapsableTableViewViewController.m */; };
 		BD04F70B1841324100646586 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F70A1841324100646586 /* splash.png */; };
 		BD04F70D1841351D00646586 /* splash3.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F70C1841351D00646586 /* splash3.png */; };
 		BD04F70F1841372600646586 /* splash4.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F70E1841372600646586 /* splash4.png */; };
@@ -54,20 +52,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = B3481D3D18256F1800002E0F;
 			remoteInfo = FAP;
-		};
-		BD04F6FD18410B2700646586 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BD04F6F918410B2600646586 /* CollapsableTableView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
-			remoteInfo = CollapsableTableView;
-		};
-		BD04F6FF18410B4700646586 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BD04F6F918410B2600646586 /* CollapsableTableView.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
-			remoteInfo = CollapsableTableView;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -86,7 +70,6 @@
 		B3481D5718256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		B3481D5918256F1900002E0F /* FAPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAPViewController.h; sourceTree = "<group>"; };
 		B3481D5A18256F1900002E0F /* FAPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAPViewController.m; sourceTree = "<group>"; };
-		B3481D5C18256F1900002E0F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = /Users/davidlobosco/FAP3/FAP/Images.xcassets; sourceTree = "<absolute>"; };
 		B3481D6218256F1900002E0F /* FAPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D6318256F1900002E0F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B3481D6B18256F1900002E0F /* FAPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FAPTests-Info.plist"; sourceTree = "<group>"; };
@@ -114,9 +97,7 @@
 		BD04F6EC183D8CAF00646586 /* iconSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconSmall.png; path = FAP/icons/iconSmall.png; sourceTree = SOURCE_ROOT; };
 		BD04F6ED183D8CAF00646586 /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = library.png; path = FAP/icons/library.png; sourceTree = SOURCE_ROOT; };
 		BD04F6EE183D8CAF00646586 /* party.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = party.png; path = FAP/icons/party.png; sourceTree = SOURCE_ROOT; };
-		BD04F6F918410B2600646586 /* CollapsableTableView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CollapsableTableView.xcodeproj; path = "../Downloads/CollapsableTableViewTestProject-2/CollapsableTableView.xcodeproj"; sourceTree = "<group>"; };
 		BD04F7011841198200646586 /* FAP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FAP.xcodeproj; sourceTree = "<group>"; };
-		BD04F70418411A0300646586 /* CollapsableTableViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollapsableTableViewViewController.m; sourceTree = "<group>"; };
 		BD04F70A1841324100646586 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = FAP/icons/splash.png; sourceTree = SOURCE_ROOT; };
 		BD04F70C1841351D00646586 /* splash3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash3.png; path = icons/splash3.png; sourceTree = "<group>"; };
 		BD04F70E1841372600646586 /* splash4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash4.png; path = FAP/icons/splash4.png; sourceTree = SOURCE_ROOT; };
@@ -152,9 +133,7 @@
 		B3481D3518256F1800002E0F = {
 			isa = PBXGroup;
 			children = (
-				BD04F70418411A0300646586 /* CollapsableTableViewViewController.m */,
 				BD04F7011841198200646586 /* FAP.xcodeproj */,
-				BD04F6F918410B2600646586 /* CollapsableTableView.xcodeproj */,
 				B3481D4718256F1800002E0F /* FAP */,
 				B3481D6918256F1900002E0F /* FAPTests */,
 				B3481D4018256F1800002E0F /* Frameworks */,
@@ -192,7 +171,6 @@
 				B3481D5618256F1900002E0F /* Main_iPad.storyboard */,
 				B3481D5918256F1900002E0F /* FAPViewController.h */,
 				B3481D5A18256F1900002E0F /* FAPViewController.m */,
-				B3481D5C18256F1900002E0F /* Images.xcassets */,
 				B3481D4818256F1800002E0F /* Supporting Files */,
 				B3481D791825732A00002E0F /* MyScheduleViewController.h */,
 				B3481D7A1825732A00002E0F /* MyScheduleViewController.m */,
@@ -261,14 +239,6 @@
 			path = ../../Documents/FinalsApp/icons;
 			sourceTree = "<group>";
 		};
-		BD04F6FA18410B2600646586 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BD04F6FE18410B2700646586 /* CollapsableTableView.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		BD04F7021841198200646586 /* Products */ = {
 			isa = PBXGroup;
 			name = Products;
@@ -298,7 +268,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BD04F70018410B4700646586 /* PBXTargetDependency */,
 			);
 			name = FAP;
 			productName = FAP;
@@ -351,10 +320,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = BD04F6FA18410B2600646586 /* Products */;
-					ProjectRef = BD04F6F918410B2600646586 /* CollapsableTableView.xcodeproj */;
-				},
-				{
 					ProductGroup = BD04F7021841198200646586 /* Products */;
 					ProjectRef = BD04F7011841198200646586 /* FAP.xcodeproj */;
 				},
@@ -366,16 +331,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		BD04F6FE18410B2700646586 /* CollapsableTableView.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = CollapsableTableView.app;
-			remoteRef = BD04F6FD18410B2700646586 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B3481D3C18256F1800002E0F /* Resources */ = {
@@ -390,7 +345,6 @@
 				BD04F70B1841324100646586 /* splash.png in Resources */,
 				BD04F6F6183D8CAF00646586 /* iconSmall.png in Resources */,
 				BD04F6F1183D8CAF00646586 /* cal.png in Resources */,
-				B3481D5D18256F1900002E0F /* Images.xcassets in Resources */,
 				BD04F6F2183D8CAF00646586 /* food.png in Resources */,
 				B3481D5518256F1900002E0F /* Main_iPhone.storyboard in Resources */,
 				BD04F7151841448B00646586 /* ritchie.jpg in Resources */,
@@ -420,7 +374,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD04F70518411A0300646586 /* CollapsableTableViewViewController.m in Sources */,
 				B3481D8A18257ED200002E0F /* GymHoursViewController.m in Sources */,
 				B3481D5B18256F1900002E0F /* FAPViewController.m in Sources */,
 				B3481D81182573AC00002E0F /* EventsViewController.m in Sources */,
@@ -448,11 +401,6 @@
 			isa = PBXTargetDependency;
 			target = B3481D3D18256F1800002E0F /* FAP */;
 			targetProxy = B3481D6718256F1900002E0F /* PBXContainerItemProxy */;
-		};
-		BD04F70018410B4700646586 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CollapsableTableView;
-			targetProxy = BD04F6FF18410B4700646586 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
