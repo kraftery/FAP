@@ -1,1 +1,11 @@
 this is the finals app developed by MAD together with SGA
+
+
+Git Workflow 
+
+- checkout from origin master 
+- git checkout -b <branch_name>
+- git status to check where you are 
+- After changes, git add, git commit, git push origin <branch_name>
+- create pull request on git_hub
+`
