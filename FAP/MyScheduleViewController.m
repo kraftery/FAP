@@ -141,7 +141,8 @@
 }
 
 
--(NSMutableArray *) parse (NSString *) className{
+-(NSMutableArray *) parse: (NSString *) className{
+    NSMutableArray *final;
     //WE DO THE CONNECTION HERE AND SEND THE STRING TO THE SERVER TO GET THE JSON FILE
     NSData *jsonFile = [[NSData alloc] initWithContentsOfURL:
                         [NSURL URLWithString:@"URL To Json here"]];// THis might be changed, we just need to get the json somehow.
@@ -166,7 +167,7 @@
     }
     else{
         //we will return a 2D arrray
-        NSMutableArray *final = [NSMutableArray alloc] init]; //this will contain arrays as in it's indexes => it's gonna be a 2d array
+        final = [[NSMutableArray alloc] init]; //this will contain arrays as in it's indexes => it's gonna be a 2d array
         for (NSDictionary *dictionary in classArray){
             NSString *section = [dictionary objectForKey:@"section"];
             NSString *day = [dictionary objectForKey:@"day"];
@@ -175,7 +176,7 @@
             NSString *instructor = [dictionary objectForKey:@"instructor"];
             
             //Put all the above strings in an array
-            NSArray *final_object = [NSArray initWithObjects:section, day, time, location, instructor, nil];
+            NSArray *final_object = [[NSArray alloc] initWithObjects:section, day, time, location, instructor, nil];
             [final addObject:final_object];
             
         } //end for loop
