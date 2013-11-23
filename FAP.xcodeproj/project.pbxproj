@@ -30,6 +30,8 @@
 		B3481D8D18257EEE00002E0F /* BusScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D8C18257EEE00002E0F /* BusScheduleViewController.m */; };
 		B35E75661841419E006055BF /* SelectedLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35E75641841419D006055BF /* SelectedLibraryViewController.m */; };
 		B35E75671841419E006055BF /* SelectedLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B35E75651841419D006055BF /* SelectedLibraryViewController.xib */; };
+		B3F9DABA184170240056538D /* BusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F9DAB8184170240056538D /* BusViewController.m */; };
+		B3F9DABB184170240056538D /* BusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F9DAB9184170240056538D /* BusViewController.xib */; };
 		BD04F6EF183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6E5183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg */; };
 		BD04F6F0183D8CAF00646586 /* bus.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6E6183D8CAF00646586 /* bus.png */; };
 		BD04F6F1183D8CAF00646586 /* cal.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6E7183D8CAF00646586 /* cal.png */; };
@@ -74,7 +76,7 @@
 		B3481D5718256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		B3481D5918256F1900002E0F /* FAPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAPViewController.h; sourceTree = "<group>"; };
 		B3481D5A18256F1900002E0F /* FAPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAPViewController.m; sourceTree = "<group>"; };
-		B3481D6218256F1900002E0F /* FAPTests */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FAPTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3481D6218256F1900002E0F /* FAPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D6318256F1900002E0F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B3481D6B18256F1900002E0F /* FAPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FAPTests-Info.plist"; sourceTree = "<group>"; };
 		B3481D6D18256F1900002E0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -94,6 +96,9 @@
 		B35E75631841419D006055BF /* SelectedLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedLibraryViewController.h; sourceTree = "<group>"; };
 		B35E75641841419D006055BF /* SelectedLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedLibraryViewController.m; sourceTree = "<group>"; };
 		B35E75651841419D006055BF /* SelectedLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedLibraryViewController.xib; sourceTree = "<group>"; };
+		B3F9DAB7184170240056538D /* BusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusViewController.h; sourceTree = "<group>"; };
+		B3F9DAB8184170240056538D /* BusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusViewController.m; sourceTree = "<group>"; };
+		B3F9DAB9184170240056538D /* BusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusViewController.xib; sourceTree = "<group>"; };
 		BD04F6E5183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1425465_10201800381084347_934668304_o.jpg; path = FAP/icons/1425465_10201800381084347_934668304_o.jpg; sourceTree = SOURCE_ROOT; };
 		BD04F6E6183D8CAF00646586 /* bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bus.png; path = FAP/icons/bus.png; sourceTree = SOURCE_ROOT; };
 		BD04F6E7183D8CAF00646586 /* cal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cal.png; path = FAP/icons/cal.png; sourceTree = SOURCE_ROOT; };
@@ -152,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				B3481D3E18256F1800002E0F /* FAP.app */,
-				B3481D6218256F1900002E0F /* FAPTests */,
+				B3481D6218256F1900002E0F /* FAPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +200,9 @@
 				B35E75641841419D006055BF /* SelectedLibraryViewController.m */,
 				B35E75651841419D006055BF /* SelectedLibraryViewController.xib */,
 				68A8A63E1841537F00806031 /* Images-2.xcassets */,
+				B3F9DAB7184170240056538D /* BusViewController.h */,
+				B3F9DAB8184170240056538D /* BusViewController.m */,
+				B3F9DAB9184170240056538D /* BusViewController.xib */,
 			);
 			path = FAP;
 			sourceTree = "<group>";
@@ -302,7 +310,7 @@
 			);
 			name = FAPTests;
 			productName = FAPTests;
-			productReference = B3481D6218256F1900002E0F /* FAPTests */;
+			productReference = B3481D6218256F1900002E0F /* FAPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -371,6 +379,7 @@
 				BD04F6F7183D8CAF00646586 /* library.png in Resources */,
 				68A8A63F1841537F00806031 /* Images-2.xcassets in Resources */,
 				BD04F6F5183D8CAF00646586 /* iconBig.png in Resources */,
+				B3F9DABB184170240056538D /* BusViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +406,7 @@
 				B3481D8D18257EEE00002E0F /* BusScheduleViewController.m in Sources */,
 				B3481D841825741F00002E0F /* DiningHoursViewController.m in Sources */,
 				B3481D4E18256F1900002E0F /* main.m in Sources */,
+				B3F9DABA184170240056538D /* BusViewController.m in Sources */,
 				B3481D7B1825732A00002E0F /* MyScheduleViewController.m in Sources */,
 				B35E75661841419E006055BF /* SelectedLibraryViewController.m in Sources */,
 			);
