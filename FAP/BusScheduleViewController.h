@@ -7,9 +7,6 @@
 //
 
 
-//Adding a Test comment, Remove later
-
-
 #import <UIKit/UIKit.h>
 
 @interface BusScheduleViewController : UIViewController
