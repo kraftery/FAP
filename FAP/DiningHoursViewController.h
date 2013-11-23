@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CollapsableTableView.h"
 @interface DiningHoursViewController : UIViewController
+
+
 
 @end
