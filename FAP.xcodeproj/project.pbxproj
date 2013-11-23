@@ -42,6 +42,9 @@
 		BD04F70B1841324100646586 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F70A1841324100646586 /* splash.png */; };
 		BD04F70D1841351D00646586 /* splash3.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F70C1841351D00646586 /* splash3.png */; };
 		BD04F70F1841372600646586 /* splash4.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F70E1841372600646586 /* splash4.png */; };
+		BD04F7141841448B00646586 /* eppley.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BD04F7111841448B00646586 /* eppley.JPG */; };
+		BD04F7151841448B00646586 /* ritchie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD04F7121841448B00646586 /* ritchie.jpg */; };
+		BD04F7161841448B00646586 /* sph.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BD04F7131841448B00646586 /* sph.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,9 @@
 		BD04F70A1841324100646586 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = FAP/icons/splash.png; sourceTree = SOURCE_ROOT; };
 		BD04F70C1841351D00646586 /* splash3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash3.png; path = icons/splash3.png; sourceTree = "<group>"; };
 		BD04F70E1841372600646586 /* splash4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash4.png; path = FAP/icons/splash4.png; sourceTree = SOURCE_ROOT; };
+		BD04F7111841448B00646586 /* eppley.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eppley.JPG; sourceTree = "<group>"; };
+		BD04F7121841448B00646586 /* ritchie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ritchie.jpg; sourceTree = "<group>"; };
+		BD04F7131841448B00646586 /* sph.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sph.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +213,7 @@
 		B3481D4818256F1800002E0F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD04F7101841448A00646586 /* recCenters */,
 				BD04F6D0183D87AA00646586 /* icons */,
 				B3481D4918256F1800002E0F /* FAP-Info.plist */,
 				B3481D4A18256F1800002E0F /* InfoPlist.strings */,
@@ -265,6 +272,16 @@
 		BD04F7021841198200646586 /* Products */ = {
 			isa = PBXGroup;
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BD04F7101841448A00646586 /* recCenters */ = {
+			isa = PBXGroup;
+			children = (
+				BD04F7111841448B00646586 /* eppley.JPG */,
+				BD04F7121841448B00646586 /* ritchie.jpg */,
+				BD04F7131841448B00646586 /* sph.JPG */,
+			);
+			path = recCenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +384,7 @@
 			files = (
 				BD04F6F3183D8CAF00646586 /* gym.png in Resources */,
 				BD04F6F0183D8CAF00646586 /* bus.png in Resources */,
+				BD04F7141841448B00646586 /* eppley.JPG in Resources */,
 				B3481D5818256F1900002E0F /* Main_iPad.storyboard in Resources */,
 				BD04F6EF183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg in Resources */,
 				BD04F70B1841324100646586 /* splash.png in Resources */,
@@ -375,11 +393,13 @@
 				B3481D5D18256F1900002E0F /* Images.xcassets in Resources */,
 				BD04F6F2183D8CAF00646586 /* food.png in Resources */,
 				B3481D5518256F1900002E0F /* Main_iPhone.storyboard in Resources */,
+				BD04F7151841448B00646586 /* ritchie.jpg in Resources */,
 				BD04F6F4183D8CAF00646586 /* icon.png in Resources */,
 				B3481D4C18256F1800002E0F /* InfoPlist.strings in Resources */,
 				BD04F70F1841372600646586 /* splash4.png in Resources */,
 				BD04F70D1841351D00646586 /* splash3.png in Resources */,
 				BD04F6F8183D8CAF00646586 /* party.png in Resources */,
+				BD04F7161841448B00646586 /* sph.JPG in Resources */,
 				BD04F6F7183D8CAF00646586 /* library.png in Resources */,
 				BD04F6F5183D8CAF00646586 /* iconBig.png in Resources */,
 			);
