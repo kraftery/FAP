@@ -69,6 +69,13 @@ NSArray *buses;
     return current_cell;
 }
 
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BusViewController *controller = [[BusViewController alloc] initWithNibName:@"BusViewController" bundle:[NSBundle mainBundle]];
+    //switch here
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
