@@ -28,6 +28,8 @@
 		B3481D871825745000002E0F /* LibraryHoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D861825745000002E0F /* LibraryHoursViewController.m */; };
 		B3481D8A18257ED200002E0F /* GymHoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D8918257ED200002E0F /* GymHoursViewController.m */; };
 		B3481D8D18257EEE00002E0F /* BusScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D8C18257EEE00002E0F /* BusScheduleViewController.m */; };
+		B35E75661841419E006055BF /* SelectedLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35E75641841419D006055BF /* SelectedLibraryViewController.m */; };
+		B35E75671841419E006055BF /* SelectedLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B35E75651841419D006055BF /* SelectedLibraryViewController.xib */; };
 		BD04F6EF183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6E5183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg */; };
 		BD04F6F0183D8CAF00646586 /* bus.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6E6183D8CAF00646586 /* bus.png */; };
 		BD04F6F1183D8CAF00646586 /* cal.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6E7183D8CAF00646586 /* cal.png */; };
@@ -83,6 +85,9 @@
 		B3481D8918257ED200002E0F /* GymHoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymHoursViewController.m; sourceTree = "<group>"; };
 		B3481D8B18257EEE00002E0F /* BusScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusScheduleViewController.h; sourceTree = "<group>"; };
 		B3481D8C18257EEE00002E0F /* BusScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusScheduleViewController.m; sourceTree = "<group>"; };
+		B35E75631841419D006055BF /* SelectedLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedLibraryViewController.h; sourceTree = "<group>"; };
+		B35E75641841419D006055BF /* SelectedLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedLibraryViewController.m; sourceTree = "<group>"; };
+		B35E75651841419D006055BF /* SelectedLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedLibraryViewController.xib; sourceTree = "<group>"; };
 		BD04F6E5183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1425465_10201800381084347_934668304_o.jpg; path = FAP/icons/1425465_10201800381084347_934668304_o.jpg; sourceTree = SOURCE_ROOT; };
 		BD04F6E6183D8CAF00646586 /* bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bus.png; path = FAP/icons/bus.png; sourceTree = SOURCE_ROOT; };
 		BD04F6E7183D8CAF00646586 /* cal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cal.png; path = FAP/icons/cal.png; sourceTree = SOURCE_ROOT; };
@@ -172,6 +177,9 @@
 				B3481D8918257ED200002E0F /* GymHoursViewController.m */,
 				B3481D8B18257EEE00002E0F /* BusScheduleViewController.h */,
 				B3481D8C18257EEE00002E0F /* BusScheduleViewController.m */,
+				B35E75631841419D006055BF /* SelectedLibraryViewController.h */,
+				B35E75641841419D006055BF /* SelectedLibraryViewController.m */,
+				B35E75651841419D006055BF /* SelectedLibraryViewController.xib */,
 			);
 			path = FAP;
 			sourceTree = "<group>";
@@ -302,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD04F6F3183D8CAF00646586 /* gym.png in Resources */,
+				B35E75671841419E006055BF /* SelectedLibraryViewController.xib in Resources */,
 				BD04F6F0183D8CAF00646586 /* bus.png in Resources */,
 				B3481D5818256F1900002E0F /* Main_iPad.storyboard in Resources */,
 				BD04F6EF183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg in Resources */,
@@ -342,6 +351,7 @@
 				B3481D841825741F00002E0F /* DiningHoursViewController.m in Sources */,
 				B3481D4E18256F1900002E0F /* main.m in Sources */,
 				B3481D7B1825732A00002E0F /* MyScheduleViewController.m in Sources */,
+				B35E75661841419E006055BF /* SelectedLibraryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

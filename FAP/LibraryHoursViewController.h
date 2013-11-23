@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LibraryHoursViewController : UIViewController
+@interface LibraryHoursViewController : UIViewController {
+    NSArray *libraries;
+}
+
+@property(nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end
