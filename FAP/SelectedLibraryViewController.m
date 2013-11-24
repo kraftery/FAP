@@ -30,7 +30,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     label.text = labelText;
-    //imageView.image = [UIImage imageNamed:imageName];
+    imageView.image = [UIImage imageNamed:imageName];
     textView.text = textViewText;
 }
 
