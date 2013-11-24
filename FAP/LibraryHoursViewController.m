@@ -32,7 +32,7 @@
 	// Do any additional setup after loading the view.
     
     self.title = @"Library Hours";
-    libraries = [[NSArray alloc] initWithObjects:@"McKeldin", @"Art", @"Architecture", @"Chemistry", @"CSPAC", @"EPSL", @"Hornbake", nil];
+    libraries = [[NSArray alloc] initWithObjects:@"McKeldin", @"Art", @"Architecture", @"Chemistry", @"CSPAC", @"Engineering", @"Hornbake", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -88,15 +88,25 @@
             break;
         case 2:
             libraryScreen.labelText = @"Archeticture";
-            libraryScreen.textViewText = @"Week before finals: December 8 - 14\n\nSun 12/8: 1:00 PM - 10:00 PM\nMon 12/9: 10:00 AM - 10:00 PM\nTues 12/10: 10:00 AM - 10:00 PM\nWed 12/11: 10:00 AM - 10:00 PM\nThur 12/12: 10:00 AM - 10:00 PM\nFri 12/13: 10:00 AM - 6:00 PM\nSat 12/14: 1:00 PM - 6:00 PM\n\nFinals Week: December 15 - 21\n\nSun 12/15: 1:00 PM - 10:00 PM\nMon 12/16: 10:00 AM - 10:00 PM\nTues 12/17: 10:00 AM - 10:00 PM\nWed 12/18: 10:00 AM - 10:00 PM\nThur 12/19: 10:00 AM - 10:00 PM\nFri 12/20: 10:00 AM - 6:00 PM\nSat 12/21: 1:00 PM - 6:00 PM";
+            libraryScreen.textViewText = @"Week Before Finals: December 8 - 14\n\nSun 12/8: 1:00 PM - 10:00 PM\nMon 12/9: 10:00 AM - 10:00 PM\nTues 12/10: 10:00 AM - 10:00 PM\nWed 12/11: 10:00 AM - 10:00 PM\nThur 12/12: 10:00 AM - 10:00 PM\nFri 12/13: 10:00 AM - 6:00 PM\nSat 12/14: 1:00 PM - 6:00 PM\n\nFinals Week: December 15 - 21\n\nSun 12/15: 1:00 PM - 10:00 PM\nMon 12/16: 10:00 AM - 10:00 PM\nTues 12/17: 10:00 AM - 10:00 PM\nWed 12/18: 10:00 AM - 10:00 PM\nThur 12/19: 10:00 AM - 10:00 PM\nFri 12/20: 10:00 AM - 6:00 PM\nSat 12/21: 1:00 PM - 6:00 PM";
             break;
         case 3:
+            libraryScreen.labelText = @"Chemistry";
+            libraryScreen.textViewText = @"Week Before Finals: December 8 - 14\n\nSun 12/8: 12:00 PM - 11:00 PM\nMon 12/9: 8:00 AM - 11:00 PM\nTues 12/10: 8:00 AM - 11:00 PM\nWed 12/11: 8:00 AM - 11:00 PM\nThur 12/12: 8:00 AM - 11:00 PM\nFri 12/13: 8:00 AM - 8:00 PM\nSat 12/14: 10:00 AM - 8:00 PM\n\nFinals Week: December 15 - 21\n\nSun 12/15: 12:00 PM - 11:00 PM\nMon 12/16: 8:00 AM - 11:00 PM\nTues 12/17: 8:00 AM - 11:00 PM\nWed 12/18: 8:00 AM - 11:00 PM\nThur 12/19: 8:00 AM - 11:00 PM\nFri 12/20: 8:00 AM - 8:00 PM\nSat 12/21: 10:00 AM - 5:00 PM";
             break;
         case 4:
+            libraryScreen.labelText = @"CSPAC";
+            libraryScreen.textViewText = @"Week Before Finals: December 8 - 14\n\nSun 12/8: 1:00 PM - 11:00 PM\nMon 12/9: 8:30 AM - 11:00 PM\nTues 12/10: 8:30 AM - 11:00 PM\nWed 12/11: 8:30 AM - 11:00 PM\nThur 12/12: 8:30 AM - 11:00 PM\nFri 12/13: 8:30 AM - 6:00 PM\nSat 12/14: 12:00 PM - 5:00 PM\n\nFinals Week: December 15 - 21\n\nSun 12/15: 1:00 PM - 11:00 PM\nMon 12/16: 8:30 AM - 11:00 PM\nTues 12/17: 8:30 AM - 11:00 PM\nWed 12/18: 8:30 AM - 11:00 PM\nThur 12/19: 8:30 AM - 11:00 PM\nFri 12/20: 8:30 AM - 6:00 PM\nSat 12/21: 12:00 PM - 5:00 PM";
+
             break;
         case 5:
+            libraryScreen.labelText = @"Engineering";
+            libraryScreen.textViewText = @"Week Before Finals: December 8 - 14\n\nSun 12/8: 12:00 PM - 11:00 PM\nMon 12/9: 8:00 AM - 11:00 PM\nTues 12/10: 8:00 AM - 11:00 PM\nWed 12/11: 8:00 AM - 11:00 PM\nThur 12/12: 8:00 AM - 11:00 PM\nFri 12/13: 8:00 AM - 2:00 AM\nSat 12/14: 10:00 AM - 2:00 AM\n\nFinals Week: December 15 - 21\n\nSun 12/15: 12:00 PM - 2:00 AM\nMon 12/16: 8:00 AM - 2:00 AM\nTues 12/17: 8:00 AM - 2:00 AM\nWed 12/18: 8:00 AM - 2:00 AM\nThur 12/19: 8:00 AM - 2:00 AM\nFri 12/20: 8:00 AM - 2:00 AM\nSat 12/21: 10:00 AM - 5:00 PM";
             break;
         case 6:
+            libraryScreen.labelText = @"Hornbake";
+            libraryScreen.textViewText = @"Week Before Finals: December 8 - 14\n\nSun 12/8: 1:00 PM - 10:00 PM\nMon 12/9: 8:00 AM - 10:00 PM\nTues 12/10: 8:00 AM - 10:00 PM\nWed 12/11: 8:00 AM - 10:00 PM\nThur 12/12: 8:00 AM - 10:00 PM\nFri 12/13: 8:00 AM - 8:00 PM\nSat 12/14: 12:00 PM - 5:00 PM\n\nFinals Week: December 15 - 21\n\nSun 12/15: 1:00 PM - 10:00 PM\nMon 12/16: 8:00 AM - 10:00 PM\nTues 12/17: 8:00 AM - 10:00 PM\nWed 12/18: 8:00 AM - 10:00 PM\nThur 12/19: 8:00 AM - 10:00 PM\nFri 12/20: 8:00 AM - 6:00 PM\nSat 12/21: 12:00 PM - 5:00 PM";
+
             break;
         default:
             break;
