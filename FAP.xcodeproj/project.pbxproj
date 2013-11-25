@@ -79,8 +79,8 @@
 		B3481D4F18256F1900002E0F /* FAP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FAP-Prefix.pch"; sourceTree = "<group>"; };
 		B3481D5018256F1900002E0F /* FAPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAPAppDelegate.h; sourceTree = "<group>"; };
 		B3481D5118256F1900002E0F /* FAPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAPAppDelegate.m; sourceTree = "<group>"; };
-		B3481D5418256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		B3481D5718256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B3481D5418256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B3481D5718256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		B3481D5918256F1900002E0F /* FAPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAPViewController.h; sourceTree = "<group>"; };
 		B3481D5A18256F1900002E0F /* FAPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAPViewController.m; sourceTree = "<group>"; };
 		B3481D6218256F1900002E0F /* FAPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
