@@ -35,6 +35,7 @@
     libraries = [[NSArray alloc] initWithObjects:@"McKeldin", @"Art", @"Architecture", @"Chemistry", @"CSPAC", @"Engineering", @"Hornbake", nil];
     tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
     //the filled cells
+    tableView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning
