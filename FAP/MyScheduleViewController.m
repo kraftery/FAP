@@ -36,7 +36,7 @@
         NSString *className = [[alertView textFieldAtIndex:0] text];
         NSString *sectionNumber = [[alertView textFieldAtIndex:1] text];
         
-        NSString *examInfo = [self parse:className second:sectionNumber];
+        NSMutableArray *examInfo = [self parse:className second:sectionNumber];
         if (examInfo != nil) {
             [myExams addObject:examInfo];
         }
@@ -106,10 +106,14 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    cell.textLabel.text = [myExams objectAtIndex:indexPath.row];
+    NSMutableArray *exam = [myExams objectAtIndex:indexPath.row];
+    NSString *timeDay = [[NSString alloc] initWithFormat:@"%@ %@", [exam objectAtIndex:1], [exam objectAtIndex:2]];
+    NSString *header = [[NSString alloc] initWithFormat:@"%@ - %@", [exam objectAtIndex:0], [exam objectAtIndex:3]];
+    cell.textLabel.text = header;
+    cell.detailTextLabel.text = timeDay;
     
     return cell;
 }
@@ -145,9 +149,9 @@
 }
 
 
--(NSString *) parse: (NSString *) className second: (NSString *) sectionNumber{
+-(NSMutableArray *) parse: (NSString *) className second: (NSString *) sectionNumber{
     NSMutableArray *final;
-    NSString *to_return = @"";
+    NSMutableArray *to_return;
     if(className == nil || [className length] == 0 || sectionNumber == nil || [sectionNumber length] == 0){
         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"
                                                             message:@"There was an error getting your class. Please try again later."
@@ -203,10 +207,12 @@
     //preparing string to return
     for (NSArray *current_class in final) {
         if([sectionNumber isEqualToString:[current_class objectAtIndex:0]]){
-            to_return = [NSString stringWithFormat:@"%@\n%@\n%@ %@", className, day, time, location];
+            //to_return = [NSString stringWithFormat:@"%@\n%@\n%@ %@", className, day, time, location];
+            to_return = [[NSMutableArray alloc] initWithObjects:className, day, time, location, nil];
+            break;
         }
     }
-    if([to_return length] == 0){
+    if([to_return count] == 0){
         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class or section number" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];
         return nil;

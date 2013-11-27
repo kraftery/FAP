@@ -66,7 +66,10 @@ NSArray *buses;
             current_cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }
     }
+    
+
     current_cell.textLabel.text = [buses objectAtIndex:indexPath.row];
+    
     return current_cell;
 }
 
