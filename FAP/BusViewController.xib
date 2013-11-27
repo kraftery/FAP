@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusViewController">
             <connections>
                 <outlet property="view" destination="1" id="3"/>
+                <outlet property="webView" destination="gGe-8x-Znl" id="WGS-h6-byq"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
