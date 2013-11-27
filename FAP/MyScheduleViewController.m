@@ -35,7 +35,12 @@
     if(buttonIndex != [alertView cancelButtonIndex]) {
         NSString *className = [[alertView textFieldAtIndex:0] text];
         NSString *sectionNumber = [[alertView textFieldAtIndex:1] text];
-        [myExams addObject:[self getExamInfo:className section:sectionNumber]];
+        
+        NSString *examInfo = [self parse:className second:sectionNumber];
+        if (examInfo != nil) {
+            [myExams addObject:examInfo];
+        }
+        
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         NSArray *exams = [[NSArray alloc] initWithArray:myExams];
         [defaults setObject:exams forKey:@"exams"];
@@ -44,11 +49,6 @@
     }
 }
 
-//Take the class entered, send get request to get the class's exam info, return that info as NSString
--(NSString *)getExamInfo:(NSString *)className section:(NSString *)sectionNumber {
-    
-    return className;//until we know how to implement this method
-}
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -145,17 +145,24 @@
 }
 
 
--(NSMutableString *) parse: (NSString *) className second: (NSString *) sectionNumber{
+-(NSString *) parse: (NSString *) className second: (NSString *) sectionNumber{
     NSMutableArray *final;
-    NSMutableString *to_return = "";
-    if(className == nil || [className count] == 0 || sectionNumber == nil || [sectionNumber count] == 0){
-        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"You must enter a class and a section number" delegate:nil cancelButtonTitle:@"Dismiss" otherButonTitles:nil];
+    NSString *to_return = @"";
+    if(className == nil || [className length] == 0 || sectionNumber == nil || [sectionNumber length] == 0){
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                            message:@"There was an error getting your class. Please try again later."
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Dismiss"
+                                                  otherButtonTitles:nil, nil];
+        errorView.alertViewStyle = UIAlertViewStyleDefault;
         [errorView show];
         return nil;
     }
     //WE DO THE CONNECTION HERE AND SEND THE STRING TO THE SERVER TO GET THE JSON FILE
-    NSData *jsonFile = [[NSData alloc] initWithContentsOfURL:
-                        [NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@/", className]];
+    NSString *urlString = [[NSString alloc] initWithFormat:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@/", className];
+    NSData *jsonFile = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString:urlString]];
+    
+    NSString *section, *day, *time, *location, *instructor;
     
     NSError *error = nil;
     //this is an array of dictionaries aka hashes
@@ -166,13 +173,13 @@
                            ];
     
     if(error){
-        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error getting your class.Please try again later" delegate:nil cancelButtonTitle:@"Dismiss" otherButonTitles:nil];
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error getting your class.Please try again later" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];
         return nil;
     }
     else{
         if(classArray == nil || [classArray count] == 0){
-            UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class you entered doesn't exist or is not offered this semester" delegate:nil cancelButtonTitle:@"Dismiss" otherButonTitles:nil];
+            UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class you entered doesn't exist or is not offered this semester" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
             [errorView show];
             return nil;
         }
@@ -180,11 +187,11 @@
         //we will return a 2D arrray
         final = [[NSMutableArray alloc] init]; //this will contain arrays as in it's indexes => it's gonna be a 2d array
         for (NSDictionary *dictionary in classArray){
-            NSString *section = [dictionary objectForKey:@"section"];
-            NSString *day = [dictionary objectForKey:@"day"];
-            NSString *time = [dictionary objectForKey:@"time"];
-            NSString *location = [dictionary objectForKey:@"location"];
-            NSString *instructor = [dictionary objectForKey:@"instructor"];
+            section = [dictionary objectForKey:@"section"];
+            day = [dictionary objectForKey:@"day"];
+            time = [dictionary objectForKey:@"time"];
+            location = [dictionary objectForKey:@"location"];
+            instructor = [dictionary objectForKey:@"instructor"];
             
             //Put all the above strings in an array
             NSArray *final_object = [[NSArray alloc] initWithObjects:section, day, time, location, instructor, nil];
@@ -196,11 +203,11 @@
     //preparing string to return
     for (NSArray *current_class in final) {
         if([sectionNumber isEqualToString:[current_class objectAtIndex:0]]){
-            to_return = [NSMutableString stringWithFormat:@"%@ %@ %@ %@ %@", className, day, time, location, instructor];
+            to_return = [NSString stringWithFormat:@"%@\n%@\n%@ %@", className, day, time, location];
         }
     }
-    if([to_return count] == 0){
-        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class or section number" delegate:nil cancelButtonTitle:@"Dismiss" otherButonTitles:nil];
+    if([to_return length] == 0){
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class or section number" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];
         return nil;
     }
