@@ -220,7 +220,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.98431378602981567" green="0.82745105028152466" blue="0.19607844948768616" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.98431378602981567" green="0.80000007152557373" blue="0.015686275437474251" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="5ex-oz-Uwa"/>
                 </viewController>
@@ -251,6 +251,7 @@
                                 <rect key="frame" x="0.0" y="109" width="320" height="371"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.9803922176361084" green="0.81176477670669556" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="IC1-Gn-RVo" id="cGv-5p-n44"/>
                                     <outlet property="delegate" destination="IC1-Gn-RVo" id="Ddx-fj-q4a"/>
