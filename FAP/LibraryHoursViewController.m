@@ -69,6 +69,7 @@
         }
     }
     
+    cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.text = [libraries objectAtIndex:indexPath.row];
     
     return cell;

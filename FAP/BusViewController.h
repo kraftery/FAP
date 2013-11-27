@@ -10,4 +10,7 @@
 
 @interface BusViewController : UIViewController
 
+@property(nonatomic, strong) IBOutlet UIWebView *webView;
+@property(nonatomic, strong) NSString *fullURL;
+
 @end

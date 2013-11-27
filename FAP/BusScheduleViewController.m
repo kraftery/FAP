@@ -39,9 +39,9 @@ NSArray *buses;
              @"133-Mall at PG",
              @"127-Mazza Grandmarc",
              @"109-River Road",
-             @"110-Silver Springs apt",
-             @"111-Silver Springs",
-             @"132-Varsity",
+             @"110-Seven Springs Apartments",
+             @"111-Silver Spring",
+             @"132-The Varsity",
              @"117-Blue",
              @"118-Gold",
              @"122-Green",
@@ -73,7 +73,73 @@ NSArray *buses;
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     BusViewController *controller = [[BusViewController alloc] initWithNibName:@"BusViewController" bundle:[NSBundle mainBundle]];
-    //switch here
+    
+    switch (indexPath.row) {
+        case 0:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/108_Adelphi.pdf";
+            break;
+        case 1:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/125_Circ.pdf";
+            break;
+        case 2:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/104_CPM.pdf";
+            break;
+        case 3:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/105_CtyExp.pdf";
+            break;
+        case 4:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/128_Enclave.pdf";
+            break;
+        case 5:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/131_MazzaGrandMarc_TheEnclave.pdf";
+            break;
+        case 6:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/129%20Franklin%20Park%20at%20Greenbelt%20Station.pdf";
+            break;
+        case 7:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/130_GB.pdf";
+            break;
+        case 8:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/113_HYATT.pdf";
+            break;
+        case 9:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/133_MPGs.pdf";
+            break;
+        case 10:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/127_MGM.pdf";
+            break;
+        case 11:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/109_RR.pdf";
+            break;
+        case 12:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/110_SSApt.pdf";
+            break;
+        case 13:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/111_SSM.pdf";
+            break;
+        case 14:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/132_The%20Varsity.pdf";
+            break;
+        case 15:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/117_Blue.pdf";
+            break;
+        case 16:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/118_Gold.pdf";
+            break;
+        case 17:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/122_Green.pdf";
+            break;
+        case 18:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/115_Orange.pdf";
+            break;
+        case 19:
+            controller.fullURL = @"http://www.transportation.umd.edu/images/Shuttle/Schedules%20pdfs/current/116_Purple.pdf";
+            break;
+        default:
+            break;
+    }
+    
+    
     [self.navigationController pushViewController:controller animated:YES];
 }
 
