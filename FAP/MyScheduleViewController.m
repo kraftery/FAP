@@ -23,15 +23,19 @@
                                                    delegate:self
                                           cancelButtonTitle:@"Cancel"
                                           otherButtonTitles:@"Save", nil];
-    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
+    [[alert textFieldAtIndex:1] setSecureTextEntry:NO];
+    [[alert textFieldAtIndex:0] setPlaceholder:@"Class Name"];
+    [[alert textFieldAtIndex:1] setPlaceholder:@"Section Number"];
     [alert show];
 }
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     if(buttonIndex != [alertView cancelButtonIndex]) {
-        NSString *inputString = [[alertView textFieldAtIndex:0] text];
-        [myExams addObject:[self getExamInfo:inputString]];
+        NSString *className = [[alertView textFieldAtIndex:0] text];
+        NSString *sectionNumber = [[alertView textFieldAtIndex:1] text];
+        [myExams addObject:[self getExamInfo:className section:sectionNumber]];
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         NSArray *exams = [[NSArray alloc] initWithArray:myExams];
         [defaults setObject:exams forKey:@"exams"];
@@ -41,7 +45,7 @@
 }
 
 //Take the class entered, send get request to get the class's exam info, return that info as NSString
--(NSString *)getExamInfo:(NSString *)className {
+-(NSString *)getExamInfo:(NSString *)className section:(NSString *)sectionNumber {
     
     return className;//until we know how to implement this method
 }
