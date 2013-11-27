@@ -141,11 +141,17 @@
 }
 
 
--(NSMutableArray *) parse: (NSString *) className{
+-(NSMutableString *) parse: (NSString *) className second: (NSString *) sectionNumber{
     NSMutableArray *final;
+    NSMutableString *to_return = "";
+    if(className == nil || [className count] == 0 || sectionNumber == nil || [sectionNumber count] == 0){
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"You must enter a class and a section number" delegate:nil cancelButtonTitle:@"Dismiss" otherButonTitles:nil];
+        [errorView show];
+        return nil;
+    }
     //WE DO THE CONNECTION HERE AND SEND THE STRING TO THE SERVER TO GET THE JSON FILE
     NSData *jsonFile = [[NSData alloc] initWithContentsOfURL:
-                        [NSURL URLWithString:@"URL To Json here"]];// THis might be changed, we just need to get the json somehow.
+                        [NSURL URLWithString:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@/", className]];
     
     NSError *error = nil;
     //this is an array of dictionaries aka hashes
@@ -156,16 +162,17 @@
                            ];
     
     if(error){
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error getting your class.Please try again later" delegate:nil cancelButtonTitle:@"Dismiss" otherButonTitles:nil];
+        [errorView show];
         return nil;
-        //This code below pops up an error dialog box saying we couldnt get the file downloaded. when we call parse and it returns
-        //nil, then we will use the code below to display an error
-        
-        /*
-         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"PUT ERROR MESSAGE HERE" delegate:nil cancelButtonTitle:@"Dismiss" otherButonTitles:nil];
-         [errorView show];
-         */
     }
     else{
+        if(classArray == nil || [classArray count] == 0){
+            UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class you entered doesn't exist or is not offered this semester" delegate:nil cancelButtonTitle:@"Dismiss" otherButonTitles:nil];
+            [errorView show];
+            return nil;
+        }
+        else{
         //we will return a 2D arrray
         final = [[NSMutableArray alloc] init]; //this will contain arrays as in it's indexes => it's gonna be a 2d array
         for (NSDictionary *dictionary in classArray){
@@ -180,9 +187,20 @@
             [final addObject:final_object];
             
         } //end for loop
+        } //end else
     }
-    
-    return final;
+    //preparing string to return
+    for (NSArray *current_class in final) {
+        if([sectionNumber isEqualToString:[current_class objectAtIndex:0]]){
+            to_return = [NSMutableString stringWithFormat:@"%@ %@ %@ %@ %@", className, day, time, location, instructor];
+        }
+    }
+    if([to_return count] == 0){
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class or section number" delegate:nil cancelButtonTitle:@"Dismiss" otherButonTitles:nil];
+        [errorView show];
+        return nil;
+    }
+    return to_return;
 }
 
 @end

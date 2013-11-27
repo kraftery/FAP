@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		68A8A63F1841537F00806031 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A8A63E1841537F00806031 /* Images-2.xcassets */; };
+		94F5ACC01845959300DD33A0 /* Coupons Landing Page-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 94F5ACBF1845959300DD33A0 /* Coupons Landing Page-01.png */; };
 		B3481D4218256F1800002E0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4118256F1800002E0F /* Foundation.framework */; };
 		B3481D4418256F1800002E0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4318256F1800002E0F /* CoreGraphics.framework */; };
 		B3481D4618256F1800002E0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4518256F1800002E0F /* UIKit.framework */; };
@@ -69,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		68A8A63E1841537F00806031 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		94F5ACBF1845959300DD33A0 /* Coupons Landing Page-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Coupons Landing Page-01.png"; path = "../../../../Downloads/Coupons Landing Page-01.png"; sourceTree = "<group>"; };
 		B3481D3E18256F1800002E0F /* FAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D4118256F1800002E0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3481D4318256F1800002E0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -270,6 +272,7 @@
 		BD04F6D0183D87AA00646586 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				94F5ACBF1845959300DD33A0 /* Coupons Landing Page-01.png */,
 				BD04F70E1841372600646586 /* splash4.png */,
 				BD04F70A1841324100646586 /* splash.png */,
 				BD04F6E5183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg */,
@@ -416,6 +419,7 @@
 				B3CCAB5B18429515004CB85D /* Chemistry.jpg in Resources */,
 				BD04F6F5183D8CAF00646586 /* iconBig.png in Resources */,
 				B3F9DABB184170240056538D /* BusViewController.xib in Resources */,
+				94F5ACC01845959300DD33A0 /* Coupons Landing Page-01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
