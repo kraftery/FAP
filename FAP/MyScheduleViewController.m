@@ -33,9 +33,8 @@
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     if(buttonIndex != [alertView cancelButtonIndex]) {
-        NSString *className = [[alertView textFieldAtIndex:0] text];
-        NSString *sectionNumber = [[alertView textFieldAtIndex:1] text];
-        
+        NSString *className = [[[alertView textFieldAtIndex:0] text] stringByReplacingOccurrencesOfString:@" " withString:@""];
+        NSString *sectionNumber = [[[[alertView textFieldAtIndex:1] text] stringByReplacingOccurrencesOfString:@" " withString:@""]; //this gets rid of spaces in between the string
         NSMutableArray *examInfo = [self parse:className second:sectionNumber];
         if (examInfo != nil) {
             [myExams addObject:examInfo];
@@ -162,7 +161,7 @@
         [errorView show];
         return nil;
     }
-    //WE DO THE CONNECTION HERE AND SEND THE STRING TO THE SERVER TO GET THE JSON FILE
+    
     NSString *urlString = [[NSString alloc] initWithFormat:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@/", className];
     NSData *jsonFile = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString:urlString]];
     
@@ -183,7 +182,7 @@
     }
     else{
         if(classArray == nil || [classArray count] == 0){
-            UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class you entered doesn't exist or is not offered this semester" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+            UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class is not a wrong or is not offered this semester" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
             [errorView show];
             return nil;
         }
@@ -213,7 +212,7 @@
         }
     }
     if([to_return count] == 0){
-        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class or section number" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class or section number you entered is wrong" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];
         return nil;
     }
