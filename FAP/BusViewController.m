@@ -32,7 +32,10 @@
     
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    webView.scalesPageToFit = YES;
+    webView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
     [webView loadRequest:requestObj];
+
 }
 
 - (void)didReceiveMemoryWarning

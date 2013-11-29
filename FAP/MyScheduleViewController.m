@@ -33,8 +33,10 @@
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     if(buttonIndex != [alertView cancelButtonIndex]) {
-        NSString *className = [[[alertView textFieldAtIndex:0] text] stringByReplacingOccurrencesOfString:@" " withString:@""];
-        NSString *sectionNumber = [[[[alertView textFieldAtIndex:1] text] stringByReplacingOccurrencesOfString:@" " withString:@""]; //this gets rid of spaces in between the string
+       // NSString *cls = [[alertView textFieldAtIndex:0] text];
+        NSString *className = [([[alertView textFieldAtIndex:0] text]) stringByReplacingOccurrencesOfString:@" " withString:@""];
+        NSString *sectionNumber = [([[alertView textFieldAtIndex:1] text]) stringByReplacingOccurrencesOfString:@" " withString:@""]; //this gets rid of spaces in between the string
+                                   
         NSMutableArray *examInfo = [self parse:className second:sectionNumber];
         if (examInfo != nil) {
             [myExams addObject:examInfo];
