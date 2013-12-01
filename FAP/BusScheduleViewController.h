@@ -10,6 +10,5 @@
 #import <UIKit/UIKit.h>
 
 @interface BusScheduleViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong) IBOutlet UILabel *warningLabel;
 
 @end

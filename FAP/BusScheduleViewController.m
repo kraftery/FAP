@@ -7,7 +7,6 @@
 
 @implementation BusScheduleViewController
 
-@synthesize warningLabel;
 NSArray *buses;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,7 +24,6 @@ NSArray *buses;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Bus Schedule";
-    warningLabel.text = @"WARNING: Times marked with X are not running during finals week.";
     buses = [[NSArray alloc] initWithObjects:
              @"108-Adelphi",
              @"125-Circulator",
