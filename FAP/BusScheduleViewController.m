@@ -67,7 +67,7 @@ NSArray *buses;
         }
     }
     
-    current_cell.backgroundColor = [UIColor colorWithHue:0.130 saturation:1.0 brightness:1.0 alpha:1.0];
+    current_cell.backgroundColor = [UIColor clearColor];
     current_cell.textLabel.text = [buses objectAtIndex:indexPath.row];
     
     return current_cell;
