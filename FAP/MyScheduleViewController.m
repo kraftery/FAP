@@ -135,9 +135,8 @@
 #pragma mark-
 #pragma mark Table view delegate
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    //has to be included, but it has no use currently
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 // I JUST UPLOADED THIS PART. SINCE I CANT COMPILE IT'S PROB GONNA HAVE ERRORS SO PLEASE CHECK AND FIX
