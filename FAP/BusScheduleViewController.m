@@ -24,6 +24,8 @@ NSArray *buses;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Bus Schedule";
+    UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"WARNING:" message:@"Times marked with 'X' are NOT running during finals week" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+    [errorView show];
     buses = [[NSArray alloc] initWithObjects:
              @"108-Adelphi",
              @"125-Circulator",
