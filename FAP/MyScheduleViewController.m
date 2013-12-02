@@ -139,22 +139,13 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-// I JUST UPLOADED THIS PART. SINCE I CANT COMPILE IT'S PROB GONNA HAVE ERRORS SO PLEASE CHECK AND FIX
-//This method validates the input given to us by the user
--(int) validateInput: (NSString *) class{
-    if([class length] == 0 || class == nil){//if nothing was put in the text field
-        return 0;
-    }
-    return 1;
-}
-
 
 -(NSMutableArray *) parse: (NSString *) className second: (NSString *) sectionNumber{
     NSMutableArray *final;
     NSMutableArray *to_return;
     if(className == nil || [className length] == 0 || sectionNumber == nil || [sectionNumber length] == 0){
         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                            message:@"There was an error getting your class. Please try again later."
+                                                            message:@"You did not enter a class name or section number."
                                                            delegate:self
                                                   cancelButtonTitle:@"Dismiss"
                                                   otherButtonTitles:nil, nil];
@@ -162,6 +153,17 @@
         [errorView show];
         return nil;
     }
+    
+    //Check if the class has a common final exam
+    NSArray *commonFinalsKeys = [[NSArray alloc] initWithObjects:@"BIOM301", nil];
+    NSArray *commonFinalsInfo = [[NSArray alloc] initWithObjects:[NSArray arrayWithObjects:@"Monday, December 16", @"4:00 pm - 6:00 pm", nil], nil];
+    NSDictionary *commonFinals = [[NSDictionary alloc] initWithObjects:commonFinalsInfo forKeys:commonFinalsKeys];
+    
+    NSArray *info = [commonFinals objectForKey:className];
+    if (info != nil) {
+        return [NSMutableArray arrayWithObjects:className, [info objectAtIndex:0], [info objectAtIndex:1], @"See instructor for room", nil];
+    }
+    
     
     NSString *urlString = [[NSString alloc] initWithFormat:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@/", className];
     NSData *jsonFile = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString:urlString]];
@@ -177,37 +179,37 @@
                            ];
     
     if(error){
-        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error getting your class.Please try again later" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error getting your class. Please try again later" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];
         return nil;
     }
     else{
         if(classArray == nil || [classArray count] == 0){
-            UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class is not a wrong or is not offered this semester" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+            UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class is wrong or is not offered this semester" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
             [errorView show];
             return nil;
         }
         else{
-        //we will return a 2D arrray
-        final = [[NSMutableArray alloc] init]; //this will contain arrays as in it's indexes => it's gonna be a 2d array
-        for (NSDictionary *dictionary in classArray){
-            section = [dictionary objectForKey:@"section"];
-            day = [dictionary objectForKey:@"day"];
-            time = [dictionary objectForKey:@"time"];
-            location = [dictionary objectForKey:@"location"];
-            instructor = [dictionary objectForKey:@"instructor"];
+            //we will return a 2D arrray
+            final = [[NSMutableArray alloc] init]; //this will contain arrays as in it's indexes => it's gonna be a 2d array
+            for (NSDictionary *dictionary in classArray){
+                section = [dictionary objectForKey:@"section"];
+                day = [dictionary objectForKey:@"day"];
+                time = [dictionary objectForKey:@"time"];
+                location = [dictionary objectForKey:@"location"];
+                instructor = [dictionary objectForKey:@"instructor"];
             
-            //Put all the above strings in an array
-            NSArray *final_object = [[NSArray alloc] initWithObjects:section, day, time, location, instructor, nil];
-            [final addObject:final_object];
+                //Put all the above strings in an array
+                NSArray *final_object = [[NSArray alloc] initWithObjects:section, day, time, location, instructor, nil];
+                [final addObject:final_object];
             
-        } //end for loop
-        } //end else
+            }
+        }
     }
+    
     //preparing string to return
     for (NSArray *current_class in final) {
         if([sectionNumber isEqualToString:[current_class objectAtIndex:0]]){
-            //to_return = [NSString stringWithFormat:@"%@\n%@\n%@ %@", className, day, time, location];
             to_return = [[NSMutableArray alloc] initWithObjects:className, day, time, location, nil];
             break;
         }
