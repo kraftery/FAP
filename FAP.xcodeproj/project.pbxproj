@@ -30,6 +30,9 @@
 		B3481D8D18257EEE00002E0F /* BusScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3481D8C18257EEE00002E0F /* BusScheduleViewController.m */; };
 		B35E75661841419E006055BF /* SelectedLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35E75641841419D006055BF /* SelectedLibraryViewController.m */; };
 		B35E75671841419E006055BF /* SelectedLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B35E75651841419D006055BF /* SelectedLibraryViewController.xib */; };
+		B3953941184D5766008385EE /* CouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B395393F184D5766008385EE /* CouponViewController.m */; };
+		B3953942184D5766008385EE /* CouponViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3953940184D5766008385EE /* CouponViewController.xib */; };
+		B3953944184D57A0008385EE /* Blank Coupon iphone 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B3953943184D57A0008385EE /* Blank Coupon iphone 4.jpeg */; };
 		B3CCAB4F18428F61004CB85D /* McKeldin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3CCAB4E18428F61004CB85D /* McKeldin.jpg */; };
 		B3CCAB511842910F004CB85D /* Art.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3CCAB501842910F004CB85D /* Art.jpg */; };
 		B3CCAB5318429176004CB85D /* Architecture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3CCAB5218429176004CB85D /* Architecture.jpg */; };
@@ -103,6 +106,10 @@
 		B35E75631841419D006055BF /* SelectedLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedLibraryViewController.h; sourceTree = "<group>"; };
 		B35E75641841419D006055BF /* SelectedLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedLibraryViewController.m; sourceTree = "<group>"; };
 		B35E75651841419D006055BF /* SelectedLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedLibraryViewController.xib; sourceTree = "<group>"; };
+		B395393E184D5766008385EE /* CouponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponViewController.h; sourceTree = "<group>"; };
+		B395393F184D5766008385EE /* CouponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponViewController.m; sourceTree = "<group>"; };
+		B3953940184D5766008385EE /* CouponViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponViewController.xib; sourceTree = "<group>"; };
+		B3953943184D57A0008385EE /* Blank Coupon iphone 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Blank Coupon iphone 4.jpeg"; path = "FAP/icons/Blank Coupon iphone 4.jpeg"; sourceTree = SOURCE_ROOT; };
 		B3CCAB4E18428F61004CB85D /* McKeldin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = McKeldin.jpg; path = icons/McKeldin.jpg; sourceTree = "<group>"; };
 		B3CCAB501842910F004CB85D /* Art.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Art.jpg; path = icons/Art.jpg; sourceTree = "<group>"; };
 		B3CCAB5218429176004CB85D /* Architecture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Architecture.jpg; path = icons/Architecture.jpg; sourceTree = "<group>"; };
@@ -217,6 +224,9 @@
 				B3F9DAB7184170240056538D /* BusViewController.h */,
 				B3F9DAB8184170240056538D /* BusViewController.m */,
 				B3F9DAB9184170240056538D /* BusViewController.xib */,
+				B395393E184D5766008385EE /* CouponViewController.h */,
+				B395393F184D5766008385EE /* CouponViewController.m */,
+				B3953940184D5766008385EE /* CouponViewController.xib */,
 			);
 			path = FAP;
 			sourceTree = "<group>";
@@ -282,6 +292,7 @@
 				BD04F6EC183D8CAF00646586 /* iconSmall.png */,
 				BD04F6ED183D8CAF00646586 /* library.png */,
 				BD04F6EE183D8CAF00646586 /* party.png */,
+				B3953943184D57A0008385EE /* Blank Coupon iphone 4.jpeg */,
 			);
 			name = icons;
 			path = ../../Documents/FinalsApp/icons;
@@ -394,10 +405,12 @@
 				B35E75671841419E006055BF /* SelectedLibraryViewController.xib in Resources */,
 				BD04F6F0183D8CAF00646586 /* bus.png in Resources */,
 				BD04F7141841448B00646586 /* eppley.JPG in Resources */,
+				B3953942184D5766008385EE /* CouponViewController.xib in Resources */,
 				B3481D5818256F1900002E0F /* Main_iPad.storyboard in Resources */,
 				BD04F6EF183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg in Resources */,
 				BD04F70B1841324100646586 /* splash.png in Resources */,
 				BD04F6F6183D8CAF00646586 /* iconSmall.png in Resources */,
+				B3953944184D57A0008385EE /* Blank Coupon iphone 4.jpeg in Resources */,
 				BD04F6F1183D8CAF00646586 /* cal.png in Resources */,
 				B3CCAB511842910F004CB85D /* Art.jpg in Resources */,
 				BD04F6F2183D8CAF00646586 /* food.png in Resources */,
@@ -445,6 +458,7 @@
 				B3481D8D18257EEE00002E0F /* BusScheduleViewController.m in Sources */,
 				B3481D841825741F00002E0F /* DiningHoursViewController.m in Sources */,
 				B3481D4E18256F1900002E0F /* main.m in Sources */,
+				B3953941184D5766008385EE /* CouponViewController.m in Sources */,
 				B3F9DABA184170240056538D /* BusViewController.m in Sources */,
 				B3481D7B1825732A00002E0F /* MyScheduleViewController.m in Sources */,
 				B35E75661841419E006055BF /* SelectedLibraryViewController.m in Sources */,
