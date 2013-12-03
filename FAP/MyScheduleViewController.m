@@ -155,8 +155,12 @@
     }
     
     //Check if the class has a common final exam
-    NSArray *commonFinalsKeys = [[NSArray alloc] initWithObjects:@"BIOM301", nil];
-    NSArray *commonFinalsInfo = [[NSArray alloc] initWithObjects:[NSArray arrayWithObjects:@"Monday, December 16", @"4:00 pm - 6:00 pm", nil], nil];
+    NSArray *commonFinalsKeys = [[NSArray alloc] initWithObjects:@"BIOM301", @"BMGT220", @"BMGT221", @"", nil];
+    NSArray *commonFinalsInfo = [[NSArray alloc] initWithObjects:
+                                 [NSArray arrayWithObjects:@"Mon, Dec 16", @"4:00 pm - 6:00 pm", nil],
+                                 [NSArray arrayWithObjects:@"Wed, Dec 18", @"10:30 am - 12:30 pm", nil],
+                                 [NSArray arrayWithObjects:@"Tues, Dec 17", @"4:00 pm - 6:00 pm", nil],
+                                 nil];
     NSDictionary *commonFinals = [[NSDictionary alloc] initWithObjects:commonFinalsInfo forKeys:commonFinalsKeys];
     
     NSArray *info = [commonFinals objectForKey:className];
