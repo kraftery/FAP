@@ -33,10 +33,17 @@
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     if(buttonIndex != [alertView cancelButtonIndex]) {
-       // NSString *cls = [[alertView textFieldAtIndex:0] text];
         NSString *className = [([[alertView textFieldAtIndex:0] text]) stringByReplacingOccurrencesOfString:@" " withString:@""];
         NSString *sectionNumber = [([[alertView textFieldAtIndex:1] text]) stringByReplacingOccurrencesOfString:@" " withString:@""]; //this gets rid of spaces in between the string
-                                   
+        NSString *expression = @"^[0-9]{4}$";
+        NSError *error = nil;
+        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:expression                                                                               options:NSRegularExpressionCaseInsensitive                                                                                 error:&error];
+        NSUInteger numberOfMatches = [regex numberOfMatchesInString:sectionNumber                                                         options:0 range:NSMakeRange(0, [sectionNumber length])];
+        if (numberOfMatches == 0){
+            UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"That is not a valid section number, Try again." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+            [errorView show];
+            return;
+        }
         NSMutableArray *examInfo = [self parse:className second:sectionNumber];
         if (examInfo != nil) {
             [myExams addObject:examInfo];
@@ -47,6 +54,7 @@
         [defaults setObject:exams forKey:@"exams"];
         [defaults synchronize];
         [tableView reloadData];
+        [alertView release];
     }
 }
 
@@ -111,8 +119,16 @@
     }
     
     NSMutableArray *exam = [myExams objectAtIndex:indexPath.row];
-    NSString *timeDay = [[NSString alloc] initWithFormat:@"%@ %@", [exam objectAtIndex:1], [exam objectAtIndex:2]];
-    NSString *header = [[NSString alloc] initWithFormat:@"%@ - %@", [exam objectAtIndex:0], [exam objectAtIndex:3]];
+    NSString *timeDay, *header;
+    
+    if([[exam objectAtIndex:1] isEqualToString:@"See Instructor"] || [[exam objectAtIndex:3] length] == 0){
+        timeDay = [[NSString alloc] initWithFormat:@"See you Instructor for your final's information"];
+        header = [[NSString alloc] initWithFormat:@"%@", [[exam objectAtIndex:0] uppercaseString]];
+    }
+    else{
+    timeDay = [[NSString alloc] initWithFormat:@"%@ %@", [exam objectAtIndex:1], [exam objectAtIndex:2]];
+    header = [[NSString alloc] initWithFormat:@"%@ - %@", [[exam objectAtIndex:0] uppercaseString], [exam objectAtIndex:3]];
+    }
     cell.textLabel.text = header;
     cell.detailTextLabel.text = timeDay;
     
@@ -135,20 +151,19 @@
 #pragma mark-
 #pragma mark Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {	
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 
 -(NSMutableArray *) parse: (NSString *) className second: (NSString *) sectionNumber{
     NSMutableArray *final;
-    NSMutableArray *to_return;
+    NSMutableArray *to_return = nil;
     if(className == nil || [className length] == 0 || sectionNumber == nil || [sectionNumber length] == 0){
-        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                            message:@"You did not enter a class name or section number."
-                                                           delegate:self
-                                                  cancelButtonTitle:@"Dismiss"
-                                                  otherButtonTitles:nil, nil];
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"                                                            message:@"You did not enter a class name or section number."
+            delegate:self
+            cancelButtonTitle:@"Dismiss"
+            otherButtonTitles:nil, nil];
         errorView.alertViewStyle = UIAlertViewStyleDefault;
         [errorView show];
         return nil;
@@ -157,6 +172,8 @@
     //Check if the class has a common final exam
     //http://registrar.umd.edu/current/registration/exam%20tables%20fall.html#common
     NSArray *commonFinalsKeys = [[NSArray alloc] initWithObjects:@"BIOM301", @"BMGT220", @"BMGT221", @"", nil];
+    /*NSArray *commonFinalsKeys = [[NSArray alloc] initWithObjects:@"BIOM301", @"BMGT220", @"BMGT221", @"", nil];
+>>>>>>> d77c1054bce9de1ea7ac04970e4361e5539ecf4e
     NSArray *commonFinalsInfo = [[NSArray alloc] initWithObjects:
                                  [NSArray arrayWithObjects:@"Mon, Dec 16", @"4:00 pm - 6:00 pm", nil],
                                  [NSArray arrayWithObjects:@"Wed, Dec 18", @"10:30 am - 12:30 pm", nil],
@@ -167,7 +184,7 @@
     NSArray *info = [commonFinals objectForKey:className];
     if (info != nil) {
         return [NSMutableArray arrayWithObjects:className, [info objectAtIndex:0], [info objectAtIndex:1], @"See instructor for room", nil];
-    }
+    }*/
     
     
     NSString *urlString = [[NSString alloc] initWithFormat:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@/", className];
@@ -219,7 +236,7 @@
             break;
         }
     }
-    if([to_return count] == 0){
+    if(to_return == nil || [to_return count] == 0){
         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class or section number you entered is wrong" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];
         return nil;
