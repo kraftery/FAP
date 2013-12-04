@@ -160,11 +160,7 @@
     NSMutableArray *final;
     NSMutableArray *to_return;
     if(className == nil || [className length] == 0 || sectionNumber == nil || [sectionNumber length] == 0){
-        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                            message:@"There was an error getting your class. Please try again later."
-                                                           delegate:self
-                                                  cancelButtonTitle:@"Dismiss"
-                                                  otherButtonTitles:nil, nil];
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"                                                            message:@"There was an error getting your class. Please try again later."                                                           delegate:self                                                  cancelButtonTitle:@"Dismiss"                                                  otherButtonTitles:nil, nil];
         errorView.alertViewStyle = UIAlertViewStyleDefault;
         [errorView show];
         return nil;
@@ -219,7 +215,7 @@
             break;
         }
     }
-    if([to_return count] == 0){
+    if(to_return == nil || [to_return count] == 0){
         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The class or section number you entered is wrong" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
         [errorView show];
         return nil;
