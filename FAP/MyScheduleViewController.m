@@ -54,6 +54,7 @@
         [defaults setObject:exams forKey:@"exams"];
         [defaults synchronize];
         [tableView reloadData];
+        [alertView release];
     }
 }
 
@@ -118,8 +119,16 @@
     }
     
     NSMutableArray *exam = [myExams objectAtIndex:indexPath.row];
-    NSString *timeDay = [[NSString alloc] initWithFormat:@"%@ %@", [exam objectAtIndex:1], [exam objectAtIndex:2]];
-    NSString *header = [[NSString alloc] initWithFormat:@"%@ - %@", [[exam objectAtIndex:0] uppercaseString], [exam objectAtIndex:3]];
+    NSString *timeDay, *header;
+    
+    if([[exam objectAtIndex:1] isEqualToString:@"See Instructor"] || [[exam objectAtIndex:3] length] == 0){
+        timeDay = [[NSString alloc] initWithFormat:@"See you Instructor for your final's information"];
+        header = [[NSString alloc] initWithFormat:@"%@", [[exam objectAtIndex:0] uppercaseString]];
+    }
+    else{
+    timeDay = [[NSString alloc] initWithFormat:@"%@ %@", [exam objectAtIndex:1], [exam objectAtIndex:2]];
+    header = [[NSString alloc] initWithFormat:@"%@ - %@", [[exam objectAtIndex:0] uppercaseString], [exam objectAtIndex:3]];
+    }
     cell.textLabel.text = header;
     cell.detailTextLabel.text = timeDay;
     
@@ -142,7 +151,7 @@
 #pragma mark-
 #pragma mark Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {	
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -151,18 +160,17 @@
     NSMutableArray *final;
     NSMutableArray *to_return;
     if(className == nil || [className length] == 0 || sectionNumber == nil || [sectionNumber length] == 0){
-        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                            message:@"You did not enter a class name or section number."
-                                                           delegate:self
-                                                  cancelButtonTitle:@"Dismiss"
-                                                  otherButtonTitles:nil, nil];
+        UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"                                                            message:@"You did not enter a class name or section number."
+            delegate:self
+            cancelButtonTitle:@"Dismiss"
+            otherButtonTitles:nil, nil];
         errorView.alertViewStyle = UIAlertViewStyleDefault;
         [errorView show];
         return nil;
     }
     
     //Check if the class has a common final exam
-    NSArray *commonFinalsKeys = [[NSArray alloc] initWithObjects:@"BIOM301", @"BMGT220", @"BMGT221", @"", nil];
+    /*NSArray *commonFinalsKeys = [[NSArray alloc] initWithObjects:@"BIOM301", @"BMGT220", @"BMGT221", @"", nil];
     NSArray *commonFinalsInfo = [[NSArray alloc] initWithObjects:
                                  [NSArray arrayWithObjects:@"Mon, Dec 16", @"4:00 pm - 6:00 pm", nil],
                                  [NSArray arrayWithObjects:@"Wed, Dec 18", @"10:30 am - 12:30 pm", nil],
@@ -173,7 +181,7 @@
     NSArray *info = [commonFinals objectForKey:className];
     if (info != nil) {
         return [NSMutableArray arrayWithObjects:className, [info objectAtIndex:0], [info objectAtIndex:1], @"See instructor for room", nil];
-    }
+    }*/
     
     
     NSString *urlString = [[NSString alloc] initWithFormat:@"http://mobileappdevelopersclub.com/shellp/ShelLp_Final/%@/", className];
