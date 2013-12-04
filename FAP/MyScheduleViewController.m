@@ -33,10 +33,17 @@
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     if(buttonIndex != [alertView cancelButtonIndex]) {
-       // NSString *cls = [[alertView textFieldAtIndex:0] text];
         NSString *className = [([[alertView textFieldAtIndex:0] text]) stringByReplacingOccurrencesOfString:@" " withString:@""];
         NSString *sectionNumber = [([[alertView textFieldAtIndex:1] text]) stringByReplacingOccurrencesOfString:@" " withString:@""]; //this gets rid of spaces in between the string
-                                   
+        NSString *expression = @"^[0-9]{4}$";
+        NSError *error = nil;
+        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:expression                                                                               options:NSRegularExpressionCaseInsensitive                                                                                 error:&error];
+        NSUInteger numberOfMatches = [regex numberOfMatchesInString:sectionNumber                                                         options:0 range:NSMakeRange(0, [sectionNumber length])];
+        if (numberOfMatches == 0){
+            UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"That is not a valid section number, Try again." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+            [errorView show];
+            return;
+        }
         NSMutableArray *examInfo = [self parse:className second:sectionNumber];
         if (examInfo != nil) {
             [myExams addObject:examInfo];
@@ -112,7 +119,7 @@
     
     NSMutableArray *exam = [myExams objectAtIndex:indexPath.row];
     NSString *timeDay = [[NSString alloc] initWithFormat:@"%@ %@", [exam objectAtIndex:1], [exam objectAtIndex:2]];
-    NSString *header = [[NSString alloc] initWithFormat:@"%@ - %@", [exam objectAtIndex:0], [exam objectAtIndex:3]];
+    NSString *header = [[NSString alloc] initWithFormat:@"%@ - %@", [[exam objectAtIndex:0] uppercaseString], [exam objectAtIndex:3]];
     cell.textLabel.text = header;
     cell.detailTextLabel.text = timeDay;
     
