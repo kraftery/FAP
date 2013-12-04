@@ -269,6 +269,10 @@
                                     <outlet property="delegate" destination="uyQ-e5-VkC" id="A5c-Rm-0na"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qE7-Pd-3mI">
+                                <rect key="frame" x="1" y="62" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.98431378602981567" green="0.81568634510040283" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                     </view>
