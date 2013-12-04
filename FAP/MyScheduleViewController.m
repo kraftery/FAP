@@ -158,7 +158,7 @@
 
 -(NSMutableArray *) parse: (NSString *) className second: (NSString *) sectionNumber{
     NSMutableArray *final;
-    NSMutableArray *to_return;
+    NSMutableArray *to_return = nil;
     if(className == nil || [className length] == 0 || sectionNumber == nil || [sectionNumber length] == 0){
         UIAlertView *errorView = [[UIAlertView alloc] initWithTitle:@"Error"                                                            message:@"You did not enter a class name or section number."
             delegate:self
