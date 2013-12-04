@@ -170,7 +170,10 @@
     }
     
     //Check if the class has a common final exam
+    //http://registrar.umd.edu/current/registration/exam%20tables%20fall.html#common
+    NSArray *commonFinalsKeys = [[NSArray alloc] initWithObjects:@"BIOM301", @"BMGT220", @"BMGT221", @"", nil];
     /*NSArray *commonFinalsKeys = [[NSArray alloc] initWithObjects:@"BIOM301", @"BMGT220", @"BMGT221", @"", nil];
+>>>>>>> d77c1054bce9de1ea7ac04970e4361e5539ecf4e
     NSArray *commonFinalsInfo = [[NSArray alloc] initWithObjects:
                                  [NSArray arrayWithObjects:@"Mon, Dec 16", @"4:00 pm - 6:00 pm", nil],
                                  [NSArray arrayWithObjects:@"Wed, Dec 18", @"10:30 am - 12:30 pm", nil],
