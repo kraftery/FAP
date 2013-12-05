@@ -141,7 +141,7 @@ NSArray *buses;
         default:
             break;
     }
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     [self.navigationController pushViewController:controller animated:YES];
 }
