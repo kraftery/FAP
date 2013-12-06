@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		68A8A63F1841537F00806031 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A8A63E1841537F00806031 /* Images-2.xcassets */; };
+		849F767F18514DE400A8F295 /* icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F767D18514DE400A8F295 /* icon-120.png */; };
+		849F768018514DE400A8F295 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F767E18514DE400A8F295 /* icon.png */; };
 		B3481D4218256F1800002E0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4118256F1800002E0F /* Foundation.framework */; };
 		B3481D4418256F1800002E0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4318256F1800002E0F /* CoreGraphics.framework */; };
 		B3481D4618256F1800002E0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4518256F1800002E0F /* UIKit.framework */; };
@@ -47,9 +49,6 @@
 		BD04F6F1183D8CAF00646586 /* cal.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6E7183D8CAF00646586 /* cal.png */; };
 		BD04F6F2183D8CAF00646586 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6E8183D8CAF00646586 /* food.png */; };
 		BD04F6F3183D8CAF00646586 /* gym.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6E9183D8CAF00646586 /* gym.png */; };
-		BD04F6F4183D8CAF00646586 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6EA183D8CAF00646586 /* icon.png */; };
-		BD04F6F5183D8CAF00646586 /* iconBig.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6EB183D8CAF00646586 /* iconBig.png */; };
-		BD04F6F6183D8CAF00646586 /* iconSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6EC183D8CAF00646586 /* iconSmall.png */; };
 		BD04F6F7183D8CAF00646586 /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6ED183D8CAF00646586 /* library.png */; };
 		BD04F6F8183D8CAF00646586 /* party.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F6EE183D8CAF00646586 /* party.png */; };
 		BD04F70B1841324100646586 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BD04F70A1841324100646586 /* splash.png */; };
@@ -72,6 +71,8 @@
 
 /* Begin PBXFileReference section */
 		68A8A63E1841537F00806031 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		849F767D18514DE400A8F295 /* icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-120.png"; path = "FAP/icons/icon-120.png"; sourceTree = SOURCE_ROOT; };
+		849F767E18514DE400A8F295 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = FAP/icons/icon.png; sourceTree = SOURCE_ROOT; };
 		B3481D3E18256F1800002E0F /* FAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D4118256F1800002E0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3481D4318256F1800002E0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,9 +126,6 @@
 		BD04F6E7183D8CAF00646586 /* cal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cal.png; path = FAP/icons/cal.png; sourceTree = SOURCE_ROOT; };
 		BD04F6E8183D8CAF00646586 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = food.png; path = FAP/icons/food.png; sourceTree = SOURCE_ROOT; };
 		BD04F6E9183D8CAF00646586 /* gym.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gym.png; path = FAP/icons/gym.png; sourceTree = SOURCE_ROOT; };
-		BD04F6EA183D8CAF00646586 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = FAP/icons/icon.png; sourceTree = SOURCE_ROOT; };
-		BD04F6EB183D8CAF00646586 /* iconBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconBig.png; path = FAP/icons/iconBig.png; sourceTree = SOURCE_ROOT; };
-		BD04F6EC183D8CAF00646586 /* iconSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconSmall.png; path = FAP/icons/iconSmall.png; sourceTree = SOURCE_ROOT; };
 		BD04F6ED183D8CAF00646586 /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = library.png; path = FAP/icons/library.png; sourceTree = SOURCE_ROOT; };
 		BD04F6EE183D8CAF00646586 /* party.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = party.png; path = FAP/icons/party.png; sourceTree = SOURCE_ROOT; };
 		BD04F7011841198200646586 /* FAP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FAP.xcodeproj; sourceTree = "<group>"; };
@@ -280,6 +278,8 @@
 		BD04F6D0183D87AA00646586 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				849F767D18514DE400A8F295 /* icon-120.png */,
+				849F767E18514DE400A8F295 /* icon.png */,
 				BD04F70E1841372600646586 /* splash4.png */,
 				BD04F70A1841324100646586 /* splash.png */,
 				BD04F6E5183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg */,
@@ -287,9 +287,6 @@
 				BD04F6E7183D8CAF00646586 /* cal.png */,
 				BD04F6E8183D8CAF00646586 /* food.png */,
 				BD04F6E9183D8CAF00646586 /* gym.png */,
-				BD04F6EA183D8CAF00646586 /* icon.png */,
-				BD04F6EB183D8CAF00646586 /* iconBig.png */,
-				BD04F6EC183D8CAF00646586 /* iconSmall.png */,
 				BD04F6ED183D8CAF00646586 /* library.png */,
 				BD04F6EE183D8CAF00646586 /* party.png */,
 				B3953943184D57A0008385EE /* Blank Coupon iphone 4.jpeg */,
@@ -409,14 +406,12 @@
 				B3481D5818256F1900002E0F /* Main_iPad.storyboard in Resources */,
 				BD04F6EF183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg in Resources */,
 				BD04F70B1841324100646586 /* splash.png in Resources */,
-				BD04F6F6183D8CAF00646586 /* iconSmall.png in Resources */,
 				B3953944184D57A0008385EE /* Blank Coupon iphone 4.jpeg in Resources */,
 				BD04F6F1183D8CAF00646586 /* cal.png in Resources */,
 				B3CCAB511842910F004CB85D /* Art.jpg in Resources */,
 				BD04F6F2183D8CAF00646586 /* food.png in Resources */,
 				B3481D5518256F1900002E0F /* Main_iPhone.storyboard in Resources */,
 				BD04F7151841448B00646586 /* ritchie.jpg in Resources */,
-				BD04F6F4183D8CAF00646586 /* icon.png in Resources */,
 				B3CCAB55184294C4004CB85D /* CSPAC.jpg in Resources */,
 				B3CCAB57184294E2004CB85D /* Hornbake.jpg in Resources */,
 				B3481D4C18256F1800002E0F /* InfoPlist.strings in Resources */,
@@ -424,13 +419,14 @@
 				BD04F70D1841351D00646586 /* splash3.png in Resources */,
 				B3CCAB59184294F9004CB85D /* Engineering.jpg in Resources */,
 				B3CCAB4F18428F61004CB85D /* McKeldin.jpg in Resources */,
+				849F767F18514DE400A8F295 /* icon-120.png in Resources */,
 				B3CCAB5318429176004CB85D /* Architecture.jpg in Resources */,
 				BD04F6F8183D8CAF00646586 /* party.png in Resources */,
 				BD04F7161841448B00646586 /* sph.JPG in Resources */,
 				BD04F6F7183D8CAF00646586 /* library.png in Resources */,
+				849F768018514DE400A8F295 /* icon.png in Resources */,
 				68A8A63F1841537F00806031 /* Images-2.xcassets in Resources */,
 				B3CCAB5B18429515004CB85D /* Chemistry.jpg in Resources */,
-				BD04F6F5183D8CAF00646586 /* iconBig.png in Resources */,
 				B3F9DABB184170240056538D /* BusViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,7 +602,7 @@
 				INFOPLIST_FILE = "FAP/FAP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "B8956C73-0AD6-4CD5-9646-7B792B1EF560";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "/Users/davidlobosco/CollapsableTableViewTestProject/**";
 				WRAPPER_EXTENSION = app;
@@ -619,14 +615,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Valerie LaHoud (DU27KW2996)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Valerie LaHoud (DU27KW2996)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FAP/FAP-Prefix.pch";
 				INFOPLIST_FILE = "FAP/FAP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "B8956C73-0AD6-4CD5-9646-7B792B1EF560";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "/Users/davidlobosco/CollapsableTableViewTestProject/**";
 				WRAPPER_EXTENSION = app;
