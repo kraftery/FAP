@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="9uv-TX-2qB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jl1-0l-MOK">
@@ -131,11 +131,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wsY-33-Bgj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FlY-pw-CES">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kRJ-Me-N4U">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -164,19 +164,19 @@
                         <viewControllerLayoutGuide type="bottom" id="bND-QZ-0ov"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="myf-Q6-qGT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eppley.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="8by-oE-H0Q">
-                                <rect key="frame" x="12" y="83" width="100" height="100"/>
+                                <rect key="frame" x="12" y="83" width="100" height="188"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ritchie.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x7M-iI-EIp">
-                                <rect key="frame" x="12" y="223" width="100" height="100"/>
+                                <rect key="frame" x="12" y="223" width="100" height="188"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sph.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="RzA-ux-DPZ">
-                                <rect key="frame" x="12" y="359" width="100" height="100"/>
+                                <rect key="frame" x="12" y="359" width="100" height="188"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eppley" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7i-D6-uZp">
@@ -233,7 +233,7 @@
             <objects>
                 <viewController id="IC1-Gn-RVo" customClass="BusScheduleViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="TwX-fX-bzb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.9803922176361084" green="0.79607850313186646" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.9803922176361084" green="0.81176477670669556" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -257,11 +257,11 @@
                         <viewControllerLayoutGuide type="bottom" id="TaY-Rk-1mK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wpq-uW-kGV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8IB-1Z-g3F">
-                                <rect key="frame" x="0.0" y="160" width="320" height="320"/>
+                                <rect key="frame" x="0.0" y="157" width="320" height="411"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -269,8 +269,8 @@
                                     <outlet property="delegate" destination="uyQ-e5-VkC" id="A5c-Rm-0na"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qE7-Pd-3mI">
-                                <rect key="frame" x="1" y="62" width="320" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coupon_header.png" translatesAutoresizingMaskIntoConstraints="NO" id="qE7-Pd-3mI">
+                                <rect key="frame" x="0.0" y="64" width="320" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -291,11 +291,11 @@
                         <viewControllerLayoutGuide type="bottom" id="jjG-we-buz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oZp-gl-0lY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EVr-PK-vxg">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -324,7 +324,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Ubq-6f-kQk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0Bh-iS-awI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.98431378602981567" green="0.81568634510040283" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                     </view>
@@ -356,6 +356,7 @@
     <resources>
         <image name="bus.png" width="512" height="512"/>
         <image name="cal.png" width="512" height="512"/>
+        <image name="coupon_header.png" width="648" height="130"/>
         <image name="eppley.JPG" width="640" height="480"/>
         <image name="food.png" width="512" height="512"/>
         <image name="gym.png" width="512" height="512"/>
@@ -367,6 +368,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>

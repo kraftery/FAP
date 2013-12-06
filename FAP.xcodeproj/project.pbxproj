@@ -13,6 +13,7 @@
 		849F76841851926800A8F295 /* splash1.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F76831851926800A8F295 /* splash1.png */; };
 		849F76861851936D00A8F295 /* splash4-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F76851851936D00A8F295 /* splash4-1.png */; };
 		849F7688185193B000A8F295 /* splash3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F7687185193B000A8F295 /* splash3.png */; };
+		849F768A1851AB7200A8F295 /* coupon_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F76891851AB7200A8F295 /* coupon_header.png */; };
 		B3481D4218256F1800002E0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4118256F1800002E0F /* Foundation.framework */; };
 		B3481D4418256F1800002E0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4318256F1800002E0F /* CoreGraphics.framework */; };
 		B3481D4618256F1800002E0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4518256F1800002E0F /* UIKit.framework */; };
@@ -77,6 +78,7 @@
 		849F76831851926800A8F295 /* splash1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash1.png; path = FAP/icons/splash1.png; sourceTree = SOURCE_ROOT; };
 		849F76851851936D00A8F295 /* splash4-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash4-1.png"; path = "FAP/icons/splash4-1.png"; sourceTree = SOURCE_ROOT; };
 		849F7687185193B000A8F295 /* splash3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash3.png; path = FAP/icons/splash3.png; sourceTree = SOURCE_ROOT; };
+		849F76891851AB7200A8F295 /* coupon_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coupon_header.png; path = FAP/icons/coupon_header.png; sourceTree = SOURCE_ROOT; };
 		B3481D3E18256F1800002E0F /* FAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D4118256F1800002E0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3481D4318256F1800002E0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -280,6 +282,7 @@
 		BD04F6D0183D87AA00646586 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				849F76891851AB7200A8F295 /* coupon_header.png */,
 				849F7687185193B000A8F295 /* splash3.png */,
 				849F76851851936D00A8F295 /* splash4-1.png */,
 				849F76831851926800A8F295 /* splash1.png */,
@@ -401,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849F768A1851AB7200A8F295 /* coupon_header.png in Resources */,
 				BD04F6F3183D8CAF00646586 /* gym.png in Resources */,
 				B35E75671841419E006055BF /* SelectedLibraryViewController.xib in Resources */,
 				BD04F6F0183D8CAF00646586 /* bus.png in Resources */,
