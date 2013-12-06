@@ -5,7 +5,7 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "splash4.png",
+      "filename" : "splash4-1-1.png",
       "scale" : "2x"
     },
     {
@@ -21,6 +21,7 @@
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
+      "filename" : "splash1.png",
       "scale" : "1x"
     },
     {
