@@ -14,6 +14,7 @@
 		849F76861851936D00A8F295 /* splash4-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F76851851936D00A8F295 /* splash4-1.png */; };
 		849F7688185193B000A8F295 /* splash3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F7687185193B000A8F295 /* splash3.png */; };
 		849F768A1851AB7200A8F295 /* coupon_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F76891851AB7200A8F295 /* coupon_header.png */; };
+		849F76921853ACA100A8F295 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F76911853ACA100A8F295 /* AboutViewController.m */; };
 		B3481D4218256F1800002E0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4118256F1800002E0F /* Foundation.framework */; };
 		B3481D4418256F1800002E0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4318256F1800002E0F /* CoreGraphics.framework */; };
 		B3481D4618256F1800002E0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4518256F1800002E0F /* UIKit.framework */; };
@@ -79,6 +80,8 @@
 		849F76851851936D00A8F295 /* splash4-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash4-1.png"; path = "FAP/icons/splash4-1.png"; sourceTree = SOURCE_ROOT; };
 		849F7687185193B000A8F295 /* splash3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash3.png; path = FAP/icons/splash3.png; sourceTree = SOURCE_ROOT; };
 		849F76891851AB7200A8F295 /* coupon_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coupon_header.png; path = FAP/icons/coupon_header.png; sourceTree = SOURCE_ROOT; };
+		849F76901853ACA100A8F295 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		849F76911853ACA100A8F295 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		B3481D3E18256F1800002E0F /* FAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D4118256F1800002E0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3481D4318256F1800002E0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -229,6 +232,8 @@
 				B395393E184D5766008385EE /* CouponViewController.h */,
 				B395393F184D5766008385EE /* CouponViewController.m */,
 				B3953940184D5766008385EE /* CouponViewController.xib */,
+				849F76901853ACA100A8F295 /* AboutViewController.h */,
+				849F76911853ACA100A8F295 /* AboutViewController.m */,
 			);
 			path = FAP;
 			sourceTree = "<group>";
@@ -465,6 +470,7 @@
 				B3953941184D5766008385EE /* CouponViewController.m in Sources */,
 				B3F9DABA184170240056538D /* BusViewController.m in Sources */,
 				B3481D7B1825732A00002E0F /* MyScheduleViewController.m in Sources */,
+				849F76921853ACA100A8F295 /* AboutViewController.m in Sources */,
 				B35E75661841419E006055BF /* SelectedLibraryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

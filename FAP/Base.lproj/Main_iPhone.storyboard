@@ -113,6 +113,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTO-sH-ZlI">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="About" id="S9f-qd-Ba6">
+                                        <connections>
+                                            <segue destination="m9U-Pq-hKv" kind="push" id="fvU-WS-jT0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.98431378602981567" green="0.82745105028152466" blue="0.19607844948768616" alpha="1" colorSpace="deviceRGB"/>
                     </view>
@@ -154,6 +165,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecf-0B-2As" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3539" y="-265"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="djE-fe-5Fi">
+            <objects>
+                <viewController id="m9U-Pq-hKv" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KEs-9n-IBO"/>
+                        <viewControllerLayoutGuide type="bottom" id="v6Y-vE-hYk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OmO-gn-mo8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nWR-Lq-eaf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeH-vt-CGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2580" y="-112"/>
         </scene>
         <!--Gym Hours View Controller-->
         <scene sceneID="wvi-o8-8nv">
