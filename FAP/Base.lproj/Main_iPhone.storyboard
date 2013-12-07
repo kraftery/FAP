@@ -169,7 +169,7 @@
         <!--About View Controller-->
         <scene sceneID="djE-fe-5Fi">
             <objects>
-                <viewController id="m9U-Pq-hKv" customClass="AboutViewController" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="m9U-Pq-hKv" customClass="AboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KEs-9n-IBO"/>
                         <viewControllerLayoutGuide type="bottom" id="v6Y-vE-hYk"/>
@@ -177,13 +177,25 @@
                     <view key="view" contentMode="scaleToFill" id="OmO-gn-mo8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WW2-cy-Q2q">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.97624588010000002" green="0.84686467210000005" blue="0.13557090529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="nWR-Lq-eaf"/>
+                    <connections>
+                        <outlet property="textView" destination="WW2-cy-Q2q" id="ajY-kg-I08"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeH-vt-CGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2580" y="-112"/>
+            <point key="canvasLocation" x="1988" y="194"/>
         </scene>
         <!--Gym Hours View Controller-->
         <scene sceneID="wvi-o8-8nv">
