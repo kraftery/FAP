@@ -11,6 +11,6 @@
     NSArray *restaurants;
 }
 
-
+@property(nonatomic, retain) IBOutlet UITableView *couponTable;
 
 @end

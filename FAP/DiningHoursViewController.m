@@ -13,6 +13,7 @@
 @end
 
 @implementation DiningHoursViewController
+@synthesize couponTable;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,7 +31,10 @@
     
     self.title = @"Food Deals";
     
-    restaurants = [[NSArray alloc] init];
+    restaurants = [[NSArray alloc] initWithObjects:@"Cornerstone",@"Chipotle", nil];
+    couponTable.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
+    //the filled cells
+    couponTable.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,6 +75,7 @@
 #pragma mark Table view delegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
