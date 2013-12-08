@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AboutViewController : UIViewController
+@property (retain, nonatomic) IBOutlet UITextView *textView;
 
 @end

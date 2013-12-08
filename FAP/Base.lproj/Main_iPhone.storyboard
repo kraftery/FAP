@@ -118,6 +118,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="About" id="S9f-qd-Ba6">
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <connections>
                                             <segue destination="m9U-Pq-hKv" kind="push" id="fvU-WS-jT0"/>
                                         </connections>
@@ -169,7 +170,7 @@
         <!--About View Controller-->
         <scene sceneID="djE-fe-5Fi">
             <objects>
-                <viewController id="m9U-Pq-hKv" customClass="AboutViewController" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="m9U-Pq-hKv" customClass="AboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KEs-9n-IBO"/>
                         <viewControllerLayoutGuide type="bottom" id="v6Y-vE-hYk"/>
@@ -177,13 +178,25 @@
                     <view key="view" contentMode="scaleToFill" id="OmO-gn-mo8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WW2-cy-Q2q">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.97624588010000002" green="0.84686467210000005" blue="0.13557090529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="nWR-Lq-eaf"/>
+                    <connections>
+                        <outlet property="textView" destination="WW2-cy-Q2q" id="ajY-kg-I08"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeH-vt-CGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2580" y="-112"/>
+            <point key="canvasLocation" x="1988" y="194"/>
         </scene>
         <!--Gym Hours View Controller-->
         <scene sceneID="wvi-o8-8nv">
@@ -198,15 +211,15 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eppley.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="8by-oE-H0Q">
-                                <rect key="frame" x="12" y="83" width="100" height="188"/>
+                                <rect key="frame" x="12" y="83" width="100" height="155"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ritchie.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x7M-iI-EIp">
-                                <rect key="frame" x="12" y="223" width="100" height="188"/>
+                                <rect key="frame" x="12" y="223" width="100" height="158"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sph.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="RzA-ux-DPZ">
-                                <rect key="frame" x="12" y="359" width="100" height="188"/>
+                                <rect key="frame" x="12" y="375" width="100" height="173"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eppley" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7i-D6-uZp">
@@ -223,7 +236,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="School of Public Health" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2C-3L-RQa">
-                                <rect key="frame" x="123" y="359" width="220" height="21"/>
+                                <rect key="frame" x="123" y="375" width="220" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -243,7 +256,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Hours:                        6AM - midnight" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3um-2K-zqR">
-                                <rect key="frame" x="123" y="388" width="142" height="72"/>
+                                <rect key="frame" x="123" y="404" width="142" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
