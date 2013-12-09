@@ -10,4 +10,7 @@
 
 @interface CouponViewController : UIViewController
 
+@property(nonatomic, strong) IBOutlet UIImageView *imageView;
+@property(nonatomic, strong) NSString *imageName;
+
 @end
