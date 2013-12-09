@@ -7,6 +7,7 @@
 //
 
 #import "DiningHoursViewController.h"
+#import "CouponViewController.h"
 
 @interface DiningHoursViewController ()
 
@@ -31,7 +32,7 @@
     
     self.title = @"Food Deals";
     
-    restaurants = [[NSArray alloc] initWithObjects:@"Cornerstone",@"Chipotle", nil];
+    restaurants = [[NSArray alloc] initWithObjects:@"Auntie Anne's.jpeg", @"DP Dough.jpeg", @"Pizza Kingdom", @"RJ Bentley's.jpeg", @"Ten Ren.jpeg", @"The Stamp", nil];
     couponTable.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
     //the filled cells
     couponTable.backgroundColor = [UIColor clearColor];
@@ -74,6 +75,35 @@
 #pragma mark-
 #pragma mark Table view delegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    CouponViewController *couponScreen = [[CouponViewController alloc] initWithNibName:@"CouponViewController" bundle:[NSBundle mainBundle]];
+    
+    switch (indexPath.row) {
+        case 0:
+            couponScreen.imageName = @"Auntie Anne's.jpeg";
+            break;
+        case 1:
+            couponScreen.imageName = @"DP Dough.jpeg";
+            break;
+        case 2:
+            couponScreen.imageName = @"Pizza Kingdom.jpeg";
+            break;
+        case 3:
+            couponScreen.imageName = @"RJ Bentley's.jpeg";
+            break;
+        case 4:
+            couponScreen.imageName = @"Auntie Anne's.jpeg";
+            break;
+        case 5:
+            couponScreen.imageName = @"Auntie Anne's.jpeg";
+            break;
+        case 6:
+            couponScreen.imageName = @"Auntie Anne's.jpeg";
+            break;
+
+        default:
+            break;
+    }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
