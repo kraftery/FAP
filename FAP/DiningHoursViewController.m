@@ -95,9 +95,11 @@
             controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"pizza_kingdom.png"]];
             break;
         case 5:
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"ten_ren.png"]];
+            break;
+        case 6:
             controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"stamp.png"]];
             break;
-       
         default:
             break;
     }
