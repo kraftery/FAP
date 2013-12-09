@@ -32,7 +32,7 @@
     
     self.title = @"Food Deals";
     
-    restaurants = [[NSArray alloc] initWithObjects:@"Auntie Anne's.jpeg", @"DP Dough.jpeg", @"Pizza Kingdom", @"RJ Bentley's.jpeg", @"Ten Ren.jpeg", @"The Stamp", nil];
+    restaurants = [[NSArray alloc] initWithObjects:@"Auntie Anne's",@"Bagel Place", @"RJ Bentley's", @"DP Dough", @"Pizza Kingdom", @"Ten Ren", @"The Stamp", nil];
     couponTable.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
     //the filled cells
     couponTable.backgroundColor = [UIColor clearColor];
@@ -76,36 +76,34 @@
 #pragma mark Table view delegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    CouponViewController *couponScreen = [[CouponViewController alloc] initWithNibName:@"CouponViewController" bundle:[NSBundle mainBundle]];
+    CouponViewController *controller = [[CouponViewController alloc] initWithNibName:@"CouponViewController" bundle:[NSBundle mainBundle]];
     
     switch (indexPath.row) {
         case 0:
-            couponScreen.imageName = @"Auntie Anne's.jpeg";
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"auntie_annes.png"]];
             break;
         case 1:
-            couponScreen.imageName = @"DP Dough.jpeg";
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"auntie_annes.png"]];
             break;
         case 2:
-            couponScreen.imageName = @"Pizza Kingdom.jpeg";
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"bentleys.png"]];
             break;
         case 3:
-            couponScreen.imageName = @"RJ Bentley's.jpeg";
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"dp_dough.png"]];
             break;
         case 4:
-            couponScreen.imageName = @"Auntie Anne's.jpeg";
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"pizza_kingdom.png"]];
             break;
         case 5:
-            couponScreen.imageName = @"Auntie Anne's.jpeg";
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"stamp.png"]];
             break;
-        case 6:
-            couponScreen.imageName = @"Auntie Anne's.jpeg";
-            break;
-
+       
         default:
             break;
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

@@ -15,6 +15,15 @@
 		849F7688185193B000A8F295 /* splash3.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F7687185193B000A8F295 /* splash3.png */; };
 		849F768A1851AB7200A8F295 /* coupon_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F76891851AB7200A8F295 /* coupon_header.png */; };
 		849F76921853ACA100A8F295 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F76911853ACA100A8F295 /* AboutViewController.m */; };
+		849F76B318567F1E00A8F295 /* pizza_kingdom.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F76AD18567F1E00A8F295 /* pizza_kingdom.png */; };
+		849F76B418567F1E00A8F295 /* dp_dough.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F76AE18567F1E00A8F295 /* dp_dough.png */; };
+		849F76B518567F1E00A8F295 /* ten_ren.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F76AF18567F1E00A8F295 /* ten_ren.png */; };
+		849F76B618567F1E00A8F295 /* stamp.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F76B018567F1E00A8F295 /* stamp.png */; };
+		849F76B718567F1E00A8F295 /* bentleys.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F76B118567F1E00A8F295 /* bentleys.png */; };
+		849F76B818567F1E00A8F295 /* auntie_annes.png in Resources */ = {isa = PBXBuildFile; fileRef = 849F76B218567F1E00A8F295 /* auntie_annes.png */; };
+		849F76C11856800700A8F295 /* CouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F76BF1856800700A8F295 /* CouponViewController.m */; };
+		849F76C21856800700A8F295 /* CouponViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F76C01856800700A8F295 /* CouponViewController.xib */; };
+		849F76C41856805500A8F295 /* DiningHoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F76C31856805500A8F295 /* DiningHoursViewController.m */; };
 		B3481D4218256F1800002E0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4118256F1800002E0F /* Foundation.framework */; };
 		B3481D4418256F1800002E0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4318256F1800002E0F /* CoreGraphics.framework */; };
 		B3481D4618256F1800002E0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3481D4518256F1800002E0F /* UIKit.framework */; };
@@ -79,6 +88,16 @@
 		849F76891851AB7200A8F295 /* coupon_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coupon_header.png; path = FAP/icons/coupon_header.png; sourceTree = SOURCE_ROOT; };
 		849F76901853ACA100A8F295 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		849F76911853ACA100A8F295 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		849F76AD18567F1E00A8F295 /* pizza_kingdom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pizza_kingdom.png; path = FAP/icons/pizza_kingdom.png; sourceTree = SOURCE_ROOT; };
+		849F76AE18567F1E00A8F295 /* dp_dough.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dp_dough.png; path = FAP/icons/dp_dough.png; sourceTree = SOURCE_ROOT; };
+		849F76AF18567F1E00A8F295 /* ten_ren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ten_ren.png; path = FAP/icons/ten_ren.png; sourceTree = SOURCE_ROOT; };
+		849F76B018567F1E00A8F295 /* stamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stamp.png; path = FAP/icons/stamp.png; sourceTree = SOURCE_ROOT; };
+		849F76B118567F1E00A8F295 /* bentleys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bentleys.png; path = FAP/icons/bentleys.png; sourceTree = SOURCE_ROOT; };
+		849F76B218567F1E00A8F295 /* auntie_annes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = auntie_annes.png; path = FAP/icons/auntie_annes.png; sourceTree = SOURCE_ROOT; };
+		849F76BE1856800700A8F295 /* CouponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponViewController.h; sourceTree = "<group>"; };
+		849F76BF1856800700A8F295 /* CouponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponViewController.m; sourceTree = "<group>"; };
+		849F76C01856800700A8F295 /* CouponViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponViewController.xib; sourceTree = "<group>"; };
+		849F76C31856805500A8F295 /* DiningHoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiningHoursViewController.m; sourceTree = "<group>"; };
 		B3481D3E18256F1800002E0F /* FAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D4118256F1800002E0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3481D4318256F1800002E0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -208,6 +227,7 @@
 				B3481D7F182573AC00002E0F /* EventsViewController.h */,
 				B3481D80182573AC00002E0F /* EventsViewController.m */,
 				B3481D821825741F00002E0F /* DiningHoursViewController.h */,
+				849F76C31856805500A8F295 /* DiningHoursViewController.m */,
 				B3481D851825745000002E0F /* LibraryHoursViewController.h */,
 				B3481D861825745000002E0F /* LibraryHoursViewController.m */,
 				B3481D8818257ED200002E0F /* GymHoursViewController.h */,
@@ -223,6 +243,9 @@
 				B3F9DAB9184170240056538D /* BusViewController.xib */,
 				849F76901853ACA100A8F295 /* AboutViewController.h */,
 				849F76911853ACA100A8F295 /* AboutViewController.m */,
+				849F76BE1856800700A8F295 /* CouponViewController.h */,
+				849F76BF1856800700A8F295 /* CouponViewController.m */,
+				849F76C01856800700A8F295 /* CouponViewController.xib */,
 			);
 			path = FAP;
 			sourceTree = "<group>";
@@ -276,6 +299,12 @@
 		BD04F6D0183D87AA00646586 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				849F76AD18567F1E00A8F295 /* pizza_kingdom.png */,
+				849F76AE18567F1E00A8F295 /* dp_dough.png */,
+				849F76AF18567F1E00A8F295 /* ten_ren.png */,
+				849F76B018567F1E00A8F295 /* stamp.png */,
+				849F76B118567F1E00A8F295 /* bentleys.png */,
+				849F76B218567F1E00A8F295 /* auntie_annes.png */,
 				849F76891851AB7200A8F295 /* coupon_header.png */,
 				849F7687185193B000A8F295 /* splash3.png */,
 				849F76851851936D00A8F295 /* splash4-1.png */,
@@ -398,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849F76B818567F1E00A8F295 /* auntie_annes.png in Resources */,
 				849F768A1851AB7200A8F295 /* coupon_header.png in Resources */,
 				BD04F6F3183D8CAF00646586 /* gym.png in Resources */,
 				B35E75671841419E006055BF /* SelectedLibraryViewController.xib in Resources */,
@@ -418,12 +448,18 @@
 				B3CCAB57184294E2004CB85D /* Hornbake.jpg in Resources */,
 				B3481D4C18256F1800002E0F /* InfoPlist.strings in Resources */,
 				BD04F70D1841351D00646586 /* splash3.png in Resources */,
+				849F76B618567F1E00A8F295 /* stamp.png in Resources */,
 				B3CCAB59184294F9004CB85D /* Engineering.jpg in Resources */,
 				B3CCAB4F18428F61004CB85D /* McKeldin.jpg in Resources */,
 				849F767F18514DE400A8F295 /* icon-120.png in Resources */,
 				B3CCAB5318429176004CB85D /* Architecture.jpg in Resources */,
+				849F76C21856800700A8F295 /* CouponViewController.xib in Resources */,
 				BD04F6F8183D8CAF00646586 /* party.png in Resources */,
+				849F76B518567F1E00A8F295 /* ten_ren.png in Resources */,
 				BD04F7161841448B00646586 /* sph.JPG in Resources */,
+				849F76B318567F1E00A8F295 /* pizza_kingdom.png in Resources */,
+				849F76B718567F1E00A8F295 /* bentleys.png in Resources */,
+				849F76B418567F1E00A8F295 /* dp_dough.png in Resources */,
 				BD04F6F7183D8CAF00646586 /* library.png in Resources */,
 				849F768018514DE400A8F295 /* icon.png in Resources */,
 				68A8A63F1841537F00806031 /* Images-2.xcassets in Resources */,
@@ -455,9 +491,11 @@
 				B3481D8D18257EEE00002E0F /* BusScheduleViewController.m in Sources */,
 				B3481D4E18256F1900002E0F /* main.m in Sources */,
 				B3F9DABA184170240056538D /* BusViewController.m in Sources */,
+				849F76C11856800700A8F295 /* CouponViewController.m in Sources */,
 				B3481D7B1825732A00002E0F /* MyScheduleViewController.m in Sources */,
 				849F76921853ACA100A8F295 /* AboutViewController.m in Sources */,
 				B35E75661841419E006055BF /* SelectedLibraryViewController.m in Sources */,
+				849F76C41856805500A8F295 /* DiningHoursViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
