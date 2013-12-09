@@ -40,6 +40,12 @@
 		B3953941184D5766008385EE /* CouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B395393F184D5766008385EE /* CouponViewController.m */; };
 		B3953942184D5766008385EE /* CouponViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3953940184D5766008385EE /* CouponViewController.xib */; };
 		B3953944184D57A0008385EE /* Blank Coupon iphone 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B3953943184D57A0008385EE /* Blank Coupon iphone 4.jpeg */; };
+		B39FAD6718566B24009AD65B /* Auntie Anne's.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B39FAD6618566B24009AD65B /* Auntie Anne's.jpeg */; };
+		B39FAD6918566B2F009AD65B /* DP Dough.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B39FAD6818566B2F009AD65B /* DP Dough.jpeg */; };
+		B39FAD6B18566B36009AD65B /* Pizza Kingdom.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B39FAD6A18566B36009AD65B /* Pizza Kingdom.jpeg */; };
+		B39FAD6D18566B45009AD65B /* RJ Bentley's.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B39FAD6C18566B45009AD65B /* RJ Bentley's.jpeg */; };
+		B39FAD6F18566B4D009AD65B /* Ten Ren.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B39FAD6E18566B4D009AD65B /* Ten Ren.jpeg */; };
+		B39FAD7118566B54009AD65B /* The Stamp.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B39FAD7018566B54009AD65B /* The Stamp.jpeg */; };
 		B3CCAB4F18428F61004CB85D /* McKeldin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3CCAB4E18428F61004CB85D /* McKeldin.jpg */; };
 		B3CCAB511842910F004CB85D /* Art.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3CCAB501842910F004CB85D /* Art.jpg */; };
 		B3CCAB5318429176004CB85D /* Architecture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3CCAB5218429176004CB85D /* Architecture.jpg */; };
@@ -120,6 +126,12 @@
 		B395393F184D5766008385EE /* CouponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponViewController.m; sourceTree = "<group>"; };
 		B3953940184D5766008385EE /* CouponViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponViewController.xib; sourceTree = "<group>"; };
 		B3953943184D57A0008385EE /* Blank Coupon iphone 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Blank Coupon iphone 4.jpeg"; path = "FAP/icons/Blank Coupon iphone 4.jpeg"; sourceTree = SOURCE_ROOT; };
+		B39FAD6618566B24009AD65B /* Auntie Anne's.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Auntie Anne's.jpeg"; path = "Coupons/Auntie Anne's.jpeg"; sourceTree = "<group>"; };
+		B39FAD6818566B2F009AD65B /* DP Dough.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DP Dough.jpeg"; path = "Coupons/DP Dough.jpeg"; sourceTree = "<group>"; };
+		B39FAD6A18566B36009AD65B /* Pizza Kingdom.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Pizza Kingdom.jpeg"; path = "Coupons/Pizza Kingdom.jpeg"; sourceTree = "<group>"; };
+		B39FAD6C18566B45009AD65B /* RJ Bentley's.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "RJ Bentley's.jpeg"; path = "Coupons/RJ Bentley's.jpeg"; sourceTree = "<group>"; };
+		B39FAD6E18566B4D009AD65B /* Ten Ren.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Ten Ren.jpeg"; path = "Coupons/Ten Ren.jpeg"; sourceTree = "<group>"; };
+		B39FAD7018566B54009AD65B /* The Stamp.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "The Stamp.jpeg"; path = "Coupons/The Stamp.jpeg"; sourceTree = "<group>"; };
 		B3CCAB4E18428F61004CB85D /* McKeldin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = McKeldin.jpg; path = icons/McKeldin.jpg; sourceTree = "<group>"; };
 		B3CCAB501842910F004CB85D /* Art.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Art.jpg; path = icons/Art.jpg; sourceTree = "<group>"; };
 		B3CCAB5218429176004CB85D /* Architecture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Architecture.jpg; path = icons/Architecture.jpg; sourceTree = "<group>"; };
@@ -241,6 +253,7 @@
 		B3481D4818256F1800002E0F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B39FAD65185669D2009AD65B /* Coupons */,
 				B3CCAB4D18428F43004CB85D /* libraries */,
 				BD04F7101841448A00646586 /* recCenters */,
 				BD04F6D0183D87AA00646586 /* icons */,
@@ -268,6 +281,19 @@
 				B3481D6C18256F1900002E0F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B39FAD65185669D2009AD65B /* Coupons */ = {
+			isa = PBXGroup;
+			children = (
+				B39FAD6618566B24009AD65B /* Auntie Anne's.jpeg */,
+				B39FAD6818566B2F009AD65B /* DP Dough.jpeg */,
+				B39FAD6A18566B36009AD65B /* Pizza Kingdom.jpeg */,
+				B39FAD6C18566B45009AD65B /* RJ Bentley's.jpeg */,
+				B39FAD6E18566B4D009AD65B /* Ten Ren.jpeg */,
+				B39FAD7018566B54009AD65B /* The Stamp.jpeg */,
+			);
+			name = Coupons;
 			sourceTree = "<group>";
 		};
 		B3CCAB4D18428F43004CB85D /* libraries */ = {
@@ -421,26 +447,32 @@
 				B3953944184D57A0008385EE /* Blank Coupon iphone 4.jpeg in Resources */,
 				BD04F6F1183D8CAF00646586 /* cal.png in Resources */,
 				B3CCAB511842910F004CB85D /* Art.jpg in Resources */,
+				B39FAD7118566B54009AD65B /* The Stamp.jpeg in Resources */,
 				BD04F6F2183D8CAF00646586 /* food.png in Resources */,
 				849F7688185193B000A8F295 /* splash3.png in Resources */,
 				849F76841851926800A8F295 /* splash1.png in Resources */,
 				B3481D5518256F1900002E0F /* Main_iPhone.storyboard in Resources */,
 				BD04F7151841448B00646586 /* ritchie.jpg in Resources */,
 				B3CCAB55184294C4004CB85D /* CSPAC.jpg in Resources */,
+				B39FAD6D18566B45009AD65B /* RJ Bentley's.jpeg in Resources */,
 				B3CCAB57184294E2004CB85D /* Hornbake.jpg in Resources */,
 				B3481D4C18256F1800002E0F /* InfoPlist.strings in Resources */,
 				BD04F70D1841351D00646586 /* splash3.png in Resources */,
 				B3CCAB59184294F9004CB85D /* Engineering.jpg in Resources */,
+				B39FAD6B18566B36009AD65B /* Pizza Kingdom.jpeg in Resources */,
+				B39FAD6918566B2F009AD65B /* DP Dough.jpeg in Resources */,
 				B3CCAB4F18428F61004CB85D /* McKeldin.jpg in Resources */,
 				849F767F18514DE400A8F295 /* icon-120.png in Resources */,
 				B3CCAB5318429176004CB85D /* Architecture.jpg in Resources */,
 				BD04F6F8183D8CAF00646586 /* party.png in Resources */,
 				BD04F7161841448B00646586 /* sph.JPG in Resources */,
+				B39FAD6F18566B4D009AD65B /* Ten Ren.jpeg in Resources */,
 				BD04F6F7183D8CAF00646586 /* library.png in Resources */,
 				849F768018514DE400A8F295 /* icon.png in Resources */,
 				68A8A63F1841537F00806031 /* Images-2.xcassets in Resources */,
 				B3CCAB5B18429515004CB85D /* Chemistry.jpg in Resources */,
 				B3F9DABB184170240056538D /* BusViewController.xib in Resources */,
+				B39FAD6718566B24009AD65B /* Auntie Anne's.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
