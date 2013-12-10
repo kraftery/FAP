@@ -14,7 +14,7 @@
 
 @implementation MyScheduleViewController
 
-@synthesize tableView;
+@synthesize myTableView;
 
 -(IBAction)addButtonClick:(id)sender {
     
@@ -53,7 +53,7 @@
         NSArray *exams = [[NSArray alloc] initWithArray:myExams];
         [defaults setObject:exams forKey:@"exams"];
         [defaults synchronize];
-        [tableView reloadData];
+        [myTableView reloadData];
         [alertView release];
     }
 }
@@ -171,7 +171,7 @@
     
     //Check if the class has a common final exam
     //http://registrar.umd.edu/current/registration/exam%20tables%20fall.html#common
-    NSArray *commonFinalsKeys = [[NSArray alloc] initWithObjects:@"BIOM301", @"BMGT220", @"BMGT221", @"", nil];
+    //NSArray *commonFinalsKeys = [[NSArray alloc] initWithObjects:@"BIOM301", @"BMGT220", @"BMGT221", @"", nil];
     /*NSArray *commonFinalsKeys = [[NSArray alloc] initWithObjects:@"BIOM301", @"BMGT220", @"BMGT221", @"", nil];
     NSArray *commonFinalsInfo = [[NSArray alloc] initWithObjects:
                                  [NSArray arrayWithObjects:@"Mon, Dec 16", @"4:00 pm - 6:00 pm", nil],

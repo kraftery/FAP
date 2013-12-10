@@ -12,6 +12,6 @@
     NSArray *libraries;
 }
 
-@property(nonatomic, strong) IBOutlet UITableView *tableView;
+@property(nonatomic, strong) IBOutlet UITableView *myTableView;
 
 @end

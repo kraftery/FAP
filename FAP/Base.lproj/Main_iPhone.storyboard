@@ -160,7 +160,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="fcF-I0-PQe"/>
                     <connections>
-                        <outlet property="tableView" destination="kRJ-Me-N4U" id="YVA-LR-3Qz"/>
+                        <outlet property="myTableView" destination="kRJ-Me-N4U" id="R8J-M8-mTO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecf-0B-2As" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -354,7 +354,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="CRt-yy-8kS"/>
                     <connections>
-                        <outlet property="tableView" destination="EVr-PK-vxg" id="amw-w2-vSe"/>
+                        <outlet property="myTableView" destination="EVr-PK-vxg" id="qg5-iv-P8o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fhI-3f-iEw" userLabel="First Responder" sceneMemberID="firstResponder"/>

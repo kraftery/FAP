@@ -15,7 +15,7 @@
 
 @implementation LibraryHoursViewController
 
-@synthesize tableView;
+@synthesize myTableView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,9 +33,9 @@
     
     self.title = @"Library Hours";
     libraries = [[NSArray alloc] initWithObjects:@"McKeldin", @"Art", @"Architecture", @"Chemistry", @"CSPAC", @"Engineering", @"Hornbake", nil];
-    tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
+    myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//makes the tableview only display
     //the filled cells
-    tableView.backgroundColor = [UIColor clearColor];
+    myTableView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning
