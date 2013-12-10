@@ -46,6 +46,8 @@
 		B35E75661841419E006055BF /* SelectedLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35E75641841419D006055BF /* SelectedLibraryViewController.m */; };
 		B35E75671841419E006055BF /* SelectedLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B35E75651841419D006055BF /* SelectedLibraryViewController.xib */; };
 		B3953944184D57A0008385EE /* Blank Coupon iphone 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B3953943184D57A0008385EE /* Blank Coupon iphone 4.jpeg */; };
+		B3A2FCB418576EE700F9F6D9 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A2FCB218576EE700F9F6D9 /* EventViewController.m */; };
+		B3A2FCB518576EE700F9F6D9 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3A2FCB318576EE700F9F6D9 /* EventViewController.xib */; };
 		B3CCAB4F18428F61004CB85D /* McKeldin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3CCAB4E18428F61004CB85D /* McKeldin.jpg */; };
 		B3CCAB511842910F004CB85D /* Art.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3CCAB501842910F004CB85D /* Art.jpg */; };
 		B3CCAB5318429176004CB85D /* Architecture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3CCAB5218429176004CB85D /* Architecture.jpg */; };
@@ -132,6 +134,9 @@
 		B35E75641841419D006055BF /* SelectedLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedLibraryViewController.m; sourceTree = "<group>"; };
 		B35E75651841419D006055BF /* SelectedLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedLibraryViewController.xib; sourceTree = "<group>"; };
 		B3953943184D57A0008385EE /* Blank Coupon iphone 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Blank Coupon iphone 4.jpeg"; path = "FAP/icons/Blank Coupon iphone 4.jpeg"; sourceTree = SOURCE_ROOT; };
+		B3A2FCB118576EE700F9F6D9 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
+		B3A2FCB218576EE700F9F6D9 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
+		B3A2FCB318576EE700F9F6D9 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventViewController.xib; sourceTree = "<group>"; };
 		B3CCAB4E18428F61004CB85D /* McKeldin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = McKeldin.jpg; path = icons/McKeldin.jpg; sourceTree = "<group>"; };
 		B3CCAB501842910F004CB85D /* Art.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Art.jpg; path = icons/Art.jpg; sourceTree = "<group>"; };
 		B3CCAB5218429176004CB85D /* Architecture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Architecture.jpg; path = icons/Architecture.jpg; sourceTree = "<group>"; };
@@ -246,6 +251,9 @@
 				849F76BE1856800700A8F295 /* CouponViewController.h */,
 				849F76BF1856800700A8F295 /* CouponViewController.m */,
 				849F76C01856800700A8F295 /* CouponViewController.xib */,
+				B3A2FCB118576EE700F9F6D9 /* EventViewController.h */,
+				B3A2FCB218576EE700F9F6D9 /* EventViewController.m */,
+				B3A2FCB318576EE700F9F6D9 /* EventViewController.xib */,
 			);
 			path = FAP;
 			sourceTree = "<group>";
@@ -434,6 +442,7 @@
 				BD04F6F0183D8CAF00646586 /* bus.png in Resources */,
 				BD04F7141841448B00646586 /* eppley.JPG in Resources */,
 				B3481D5818256F1900002E0F /* Main_iPad.storyboard in Resources */,
+				B3A2FCB518576EE700F9F6D9 /* EventViewController.xib in Resources */,
 				BD04F6EF183D8CAF00646586 /* 1425465_10201800381084347_934668304_o.jpg in Resources */,
 				849F76861851936D00A8F295 /* splash4-1.png in Resources */,
 				B3953944184D57A0008385EE /* Blank Coupon iphone 4.jpeg in Resources */,
@@ -486,6 +495,7 @@
 				B3481D8A18257ED200002E0F /* GymHoursViewController.m in Sources */,
 				B3481D5B18256F1900002E0F /* FAPViewController.m in Sources */,
 				B3481D81182573AC00002E0F /* EventsViewController.m in Sources */,
+				B3A2FCB418576EE700F9F6D9 /* EventViewController.m in Sources */,
 				B3481D871825745000002E0F /* LibraryHoursViewController.m in Sources */,
 				B3481D5218256F1900002E0F /* FAPAppDelegate.m in Sources */,
 				B3481D8D18257EEE00002E0F /* BusScheduleViewController.m in Sources */,
