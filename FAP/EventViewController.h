@@ -10,4 +10,9 @@
 
 @interface EventViewController : UIViewController
 
+@property(nonatomic, strong) IBOutlet UILabel *label;
+@property(nonatomic, strong) IBOutlet UITextView *textView;
+@property(nonatomic, strong) NSString *labelText;
+@property(nonatomic, strong) NSString *textViewText;
+
 @end
