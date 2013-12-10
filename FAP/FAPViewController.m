@@ -7,6 +7,7 @@
 //
 
 #import "FAPViewController.h"
+#import <unistd.h>
 
 @interface FAPViewController ()
 
@@ -26,5 +27,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*- (void)appDidFinishLaunching
+{
+    sleep(5);
+}*/
 
 @end
