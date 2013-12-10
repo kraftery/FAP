@@ -24,7 +24,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mm-W0-rSK">
-                    <rect key="frame" x="0.0" y="123" width="320" height="445"/>
+                    <rect key="frame" x="0.0" y="123" width="320" height="366"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.9803922176361084" green="0.7568628191947937" blue="0.0" alpha="0.0" colorSpace="deviceRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
