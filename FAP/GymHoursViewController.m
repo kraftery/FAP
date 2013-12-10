@@ -14,6 +14,8 @@
 
 @implementation GymHoursViewController
 
+@synthesize ercTextView, ritchieTextView, sphTextView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,6 +31,10 @@
 	// Do any additional setup after loading the view.
     
     self.title = @"Gym Hours";
+    
+    ercTextView.text = @"Sun: 10:00 AM - Midnight\nMon - Tues: 6:00 AM - Midnight\nWed - Fri: 6:00 Am - 8:00 PM\nSat: 8:00 AM - 8:00 PM";
+    ritchieTextView.text = @"Sun: 10:00 AM - Midnight\nMon - Tues: 6:00 AM - Midnight\nWed - Fri: 6:00 Am - 6:30 PM";
+    sphTextView.text = @"Mon - Fri: 6:00 AM - 6:30 PM\n\nFitness Center Only";
 }
 
 - (void)didReceiveMemoryWarning

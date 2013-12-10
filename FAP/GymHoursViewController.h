@@ -10,4 +10,8 @@
 
 @interface GymHoursViewController : UIViewController
 
+@property(nonatomic, strong) IBOutlet UITextView *ercTextView;
+@property(nonatomic, strong) IBOutlet UITextView *ritchieTextView;
+@property(nonatomic, strong) IBOutlet UITextView *sphTextView;
+
 @end
