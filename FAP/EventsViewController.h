@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EventsViewController : UIViewController
+@interface EventsViewController : UIViewController {
+    NSArray *days;
+}
+
+@property(nonatomic, strong) IBOutlet UITableView *myTableView;
 
 @end

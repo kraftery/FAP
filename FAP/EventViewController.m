@@ -14,6 +14,8 @@
 
 @implementation EventViewController
 
+@synthesize label, labelText, textView, textViewText;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +29,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    label.text = labelText;
+    textView.text = textViewText;
+    [textView setFont:[UIFont systemFontOfSize:18]];
 }
 
 - (void)didReceiveMemoryWarning
