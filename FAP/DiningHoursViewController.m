@@ -80,25 +80,25 @@
     
     switch (indexPath.row) {
         case 0:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"auntie_annes.png"]];
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"aunty_annes.jpeg"]];
             break;
         case 1:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"auntie_annes.png"]];
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"bagel_place.png"]];
             break;
         case 2:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"bentleys.png"]];
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"bentleys.jpeg"]];
             break;
         case 3:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"dp_dough.png"]];
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"dp_dough.jpeg"]];
             break;
         case 4:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"pizza_kingdom.png"]];
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"pizza_kingdom.jpeg"]];
             break;
         case 5:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"ten_ren.png"]];
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"ten_ren.jpeg"]];
             break;
         case 6:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"stamp.png"]];
+            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"stamp.jpeg"]];
             break;
         default:
             break;
