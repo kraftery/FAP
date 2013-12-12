@@ -14,7 +14,6 @@
 @end
 
 @implementation CouponViewController
-@synthesize scrollView;
 @synthesize imageName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -30,11 +29,21 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self.imageName sizeToFit];
-    self.scrollView.delegate = self;
-    self.scrollView.minimumZoomScale = 1.0;
-    self.scrollView.maximumZoomScale = 100.0;
-    [self.scrollView addSubview:imageName];
+    [self.view addSubview:imageName];
+    imageName.center = CGPointMake(150, 200);
+    
+    //[imageName sizeToFit];
+    //scrollView.delegate = self;
+    //self.scrollView.minimumZoomScale = 1.0;
+    //self.scrollView.maximumZoomScale = 100.0;
+    //[scrollView addSubview:imageName];
+   // [scrollView setContentSize:imageName.frame.size];
+    
+    // [imageView setImage:image];
+     /*[scrollView2.contentView addSubview:imageView];
+     [scrollView2  setContentSize:image.frame.size];
+     [imageView release];
+     */
     
     //self.scrollView.contentSize = image.size;
 }
@@ -46,6 +55,7 @@
 }
 
 - (void)dealloc {
+    [imageName release];
     [super dealloc];
 }
 
