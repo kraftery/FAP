@@ -121,7 +121,8 @@
     NSMutableArray *exam = [myExams objectAtIndex:indexPath.row];
     NSString *timeDay, *header;
     
-    if([[exam objectAtIndex:1] isEqualToString:@"See Instructor"] || [[exam objectAtIndex:3] length] == 0){
+    //added checks for a few exams that gave wrong exam info
+    if([[exam objectAtIndex:1] isEqualToString:@"See Instructor"] || [[exam objectAtIndex:3] length] == 0|| [[exam objectAtIndex:0] isEqualToString:@"CMSC132"] || [[exam objectAtIndex:0] isEqualToString:@"EDMS451"] || [[exam objectAtIndex:0] isEqualToString:@"PHYS260"]){
         timeDay = [[NSString alloc] initWithFormat:@"See your Instructor for your final's information"];
         header = [[NSString alloc] initWithFormat:@"%@", [[exam objectAtIndex:0] uppercaseString]];
     }
