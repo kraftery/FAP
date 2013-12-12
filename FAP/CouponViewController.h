@@ -7,9 +7,9 @@
 //
 
 
-@interface CouponViewController : UIViewController<UIScrollViewDelegate>
-//@property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
-//@property (retain, nonatomic) IBOutlet UIImageView *imageName;
-@property (retain, nonatomic) IBOutlet UIImageView *imageName;
+@interface CouponViewController : UIViewController
+
+@property (retain, nonatomic) IBOutlet UIImageView *image;
+@property (retain, nonatomic) NSString *imageName;
 
 @end

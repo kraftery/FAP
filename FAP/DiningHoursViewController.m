@@ -66,6 +66,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.text = [restaurants objectAtIndex:indexPath.row];
     
@@ -80,25 +81,25 @@
     
     switch (indexPath.row) {
         case 0:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"aunty_annes.jpeg"]];
+            controller.imageName = @"aunty_annes.jpeg";
             break;
         case 1:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"bagel_place.png"]];
+            controller.imageName = @"bagel_place.png";
             break;
         case 2:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"bentleys.jpeg"]];
+            controller.imageName = @"bentleys.jpeg";
             break;
         case 3:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"dp_dough.jpeg"]];
+            controller.imageName = @"dp_dough.jpeg";
             break;
         case 4:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"pizza_kingdom.jpeg"]];
+            controller.imageName = @"pizza_kingdom.jpeg";
             break;
         case 5:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"ten_ren.jpeg"]];
+            controller.imageName = @"ten_ren.jpeg";
             break;
         case 6:
-            controller.imageName = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"stamp.jpeg"]];
+            controller.imageName = @"stamp.jpeg";
             break;
         default:
             break;
