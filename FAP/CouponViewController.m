@@ -7,14 +7,14 @@
 //
 
 #import "CouponViewController.h"
-//#import "CGGeometry.h"
+
 
 @interface CouponViewController ()
 
 @end
 
 @implementation CouponViewController
-@synthesize imageName;
+@synthesize imageName, image;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,8 +29,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self.view addSubview:imageName];
-    imageName.center = CGPointMake(150, 200);
     
     //[imageName sizeToFit];
     //scrollView.delegate = self;
@@ -46,6 +44,8 @@
      */
     
     //self.scrollView.contentSize = image.size;
+    
+    image.image = [UIImage imageNamed:imageName];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,12 +55,7 @@
 }
 
 - (void)dealloc {
-    [imageName release];
     [super dealloc];
 }
 
-- (UIView*)viewForZoomingInScrollView:(UIScrollView *)scrollView
-{
-    return self.imageName;
-}
 @end
