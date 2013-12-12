@@ -122,7 +122,7 @@
     NSString *timeDay, *header;
     
     if([[exam objectAtIndex:1] isEqualToString:@"See Instructor"] || [[exam objectAtIndex:3] length] == 0){
-        timeDay = [[NSString alloc] initWithFormat:@"See you Instructor for your final's information"];
+        timeDay = [[NSString alloc] initWithFormat:@"See your Instructor for your final's information"];
         header = [[NSString alloc] initWithFormat:@"%@", [[exam objectAtIndex:0] uppercaseString]];
     }
     else{
