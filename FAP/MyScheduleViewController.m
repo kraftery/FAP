@@ -228,11 +228,11 @@
             }
         }
     }
-    
+    //NSLog(final);
     //preparing string to return
     for (NSArray *current_class in final) {
         if([sectionNumber isEqualToString:[current_class objectAtIndex:0]]){
-            to_return = [[NSMutableArray alloc] initWithObjects:className, day, time, location, nil];
+            to_return = [[NSMutableArray alloc] initWithObjects:className, [current_class objectAtIndex:1], [current_class objectAtIndex:2], [current_class objectAtIndex:3], nil];
             break;
         }
     }

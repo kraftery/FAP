@@ -104,23 +104,23 @@
 		849F76CF185A036C00A8F295 /* pizza_kingdom.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pizza_kingdom.jpeg; path = FAP/icons/pizza_kingdom.jpeg; sourceTree = SOURCE_ROOT; };
 		849F76D0185A036C00A8F295 /* ten_ren.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ten_ren.jpeg; path = FAP/icons/ten_ren.jpeg; sourceTree = SOURCE_ROOT; };
 		849F76D1185A036C00A8F295 /* aunty_annes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = aunty_annes.jpeg; path = FAP/icons/aunty_annes.jpeg; sourceTree = SOURCE_ROOT; };
-		B3481D3E18256F1800002E0F /* FAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3481D3E18256F1800002E0F /* Finals App UMD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finals App UMD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D4118256F1800002E0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3481D4318256F1800002E0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B3481D4518256F1800002E0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B3481D4918256F1800002E0F /* FAP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FAP-Info.plist"; sourceTree = "<group>"; };
+		B3481D4918256F1800002E0F /* Finals App UMD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Finals App UMD-Info.plist"; sourceTree = "<group>"; };
 		B3481D4B18256F1800002E0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3481D4D18256F1800002E0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B3481D4F18256F1900002E0F /* FAP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FAP-Prefix.pch"; sourceTree = "<group>"; };
+		B3481D4F18256F1900002E0F /* Finals App UMD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Finals App UMD-Prefix.pch"; sourceTree = "<group>"; };
 		B3481D5018256F1900002E0F /* FAPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAPAppDelegate.h; sourceTree = "<group>"; };
 		B3481D5118256F1900002E0F /* FAPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAPAppDelegate.m; sourceTree = "<group>"; };
 		B3481D5418256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		B3481D5718256F1900002E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		B3481D5918256F1900002E0F /* FAPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAPViewController.h; sourceTree = "<group>"; };
 		B3481D5A18256F1900002E0F /* FAPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAPViewController.m; sourceTree = "<group>"; };
-		B3481D6218256F1900002E0F /* FAPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3481D6218256F1900002E0F /* Finals App UMDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finals App UMDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3481D6318256F1900002E0F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B3481D6B18256F1900002E0F /* FAPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FAPTests-Info.plist"; sourceTree = "<group>"; };
+		B3481D6B18256F1900002E0F /* Finals App UMDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Finals App UMDTests-Info.plist"; sourceTree = "<group>"; };
 		B3481D6D18256F1900002E0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3481D6F18256F1900002E0F /* FAPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAPTests.m; sourceTree = "<group>"; };
 		B3481D791825732A00002E0F /* MyScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScheduleViewController.h; sourceTree = "<group>"; };
@@ -204,8 +204,8 @@
 		B3481D3F18256F1800002E0F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3481D3E18256F1800002E0F /* FAP.app */,
-				B3481D6218256F1900002E0F /* FAPTests.xctest */,
+				B3481D3E18256F1800002E0F /* Finals App UMD.app */,
+				B3481D6218256F1900002E0F /* Finals App UMDTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,10 +270,10 @@
 				B3CCAB4D18428F43004CB85D /* libraries */,
 				BD04F7101841448A00646586 /* recCenters */,
 				BD04F6D0183D87AA00646586 /* icons */,
-				B3481D4918256F1800002E0F /* FAP-Info.plist */,
+				B3481D4918256F1800002E0F /* Finals App UMD-Info.plist */,
 				B3481D4A18256F1800002E0F /* InfoPlist.strings */,
 				B3481D4D18256F1800002E0F /* main.m */,
-				B3481D4F18256F1900002E0F /* FAP-Prefix.pch */,
+				B3481D4F18256F1900002E0F /* Finals App UMD-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 		B3481D6A18256F1900002E0F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B3481D6B18256F1900002E0F /* FAPTests-Info.plist */,
+				B3481D6B18256F1900002E0F /* Finals App UMDTests-Info.plist */,
 				B3481D6C18256F1900002E0F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -359,9 +359,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B3481D3D18256F1800002E0F /* FAP */ = {
+		B3481D3D18256F1800002E0F /* Finals App UMD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3481D7318256F1900002E0F /* Build configuration list for PBXNativeTarget "FAP" */;
+			buildConfigurationList = B3481D7318256F1900002E0F /* Build configuration list for PBXNativeTarget "Finals App UMD" */;
 			buildPhases = (
 				B3481D3A18256F1800002E0F /* Sources */,
 				B3481D3B18256F1800002E0F /* Frameworks */,
@@ -371,14 +371,14 @@
 			);
 			dependencies = (
 			);
-			name = FAP;
+			name = "Finals App UMD";
 			productName = FAP;
-			productReference = B3481D3E18256F1800002E0F /* FAP.app */;
+			productReference = B3481D3E18256F1800002E0F /* Finals App UMD.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B3481D6118256F1900002E0F /* FAPTests */ = {
+		B3481D6118256F1900002E0F /* Finals App UMDTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3481D7618256F1900002E0F /* Build configuration list for PBXNativeTarget "FAPTests" */;
+			buildConfigurationList = B3481D7618256F1900002E0F /* Build configuration list for PBXNativeTarget "Finals App UMDTests" */;
 			buildPhases = (
 				B3481D5E18256F1900002E0F /* Sources */,
 				B3481D5F18256F1900002E0F /* Frameworks */,
@@ -389,9 +389,9 @@
 			dependencies = (
 				B3481D6818256F1900002E0F /* PBXTargetDependency */,
 			);
-			name = FAPTests;
+			name = "Finals App UMDTests";
 			productName = FAPTests;
-			productReference = B3481D6218256F1900002E0F /* FAPTests.xctest */;
+			productReference = B3481D6218256F1900002E0F /* Finals App UMDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -412,7 +412,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B3481D3918256F1800002E0F /* Build configuration list for PBXProject "FAP" */;
+			buildConfigurationList = B3481D3918256F1800002E0F /* Build configuration list for PBXProject "Finals App UMD" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -431,8 +431,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				B3481D3D18256F1800002E0F /* FAP */,
-				B3481D6118256F1900002E0F /* FAPTests */,
+				B3481D3D18256F1800002E0F /* Finals App UMD */,
+				B3481D6118256F1900002E0F /* Finals App UMDTests */,
 			);
 		};
 /* End PBXProject section */
@@ -530,7 +530,7 @@
 /* Begin PBXTargetDependency section */
 		B3481D6818256F1900002E0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B3481D3D18256F1800002E0F /* FAP */;
+			target = B3481D3D18256F1800002E0F /* Finals App UMD */;
 			targetProxy = B3481D6718256F1900002E0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -654,10 +654,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Valerie LaHoud (APXVHEC3K9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FAP/FAP-Prefix.pch";
-				INFOPLIST_FILE = "FAP/FAP-Info.plist";
+				GCC_PREFIX_HEADER = "FAP/Finals App UMD-Prefix.pch";
+				INFOPLIST_FILE = "FAP/Finals App UMD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Finals App UMD";
 				PROVISIONING_PROFILE = "B8956C73-0AD6-4CD5-9646-7B792B1EF560";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "/Users/davidlobosco/CollapsableTableViewTestProject/**";
@@ -674,10 +674,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Valerie LaHoud (DU27KW2996)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Valerie LaHoud (DU27KW2996)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FAP/FAP-Prefix.pch";
-				INFOPLIST_FILE = "FAP/FAP-Info.plist";
+				GCC_PREFIX_HEADER = "FAP/Finals App UMD-Prefix.pch";
+				INFOPLIST_FILE = "FAP/Finals App UMD-Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "FAP/FAP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Finals App UMD";
 				PROVISIONING_PROFILE = "B8956C73-0AD6-4CD5-9646-7B792B1EF560";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "/Users/davidlobosco/CollapsableTableViewTestProject/**";
@@ -701,8 +702,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "FAPTests/FAPTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "FAPTests/Finals App UMDTests-Info.plist";
+				PRODUCT_NAME = "Finals App UMDTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -720,8 +721,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FAP/FAP-Prefix.pch";
-				INFOPLIST_FILE = "FAPTests/FAPTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "FAPTests/Finals App UMDTests-Info.plist";
+				PRODUCT_NAME = "Finals App UMDTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -730,7 +731,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B3481D3918256F1800002E0F /* Build configuration list for PBXProject "FAP" */ = {
+		B3481D3918256F1800002E0F /* Build configuration list for PBXProject "Finals App UMD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B3481D7118256F1900002E0F /* Debug */,
@@ -739,7 +740,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3481D7318256F1900002E0F /* Build configuration list for PBXNativeTarget "FAP" */ = {
+		B3481D7318256F1900002E0F /* Build configuration list for PBXNativeTarget "Finals App UMD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B3481D7418256F1900002E0F /* Debug */,
@@ -748,7 +749,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3481D7618256F1900002E0F /* Build configuration list for PBXNativeTarget "FAPTests" */ = {
+		B3481D7618256F1900002E0F /* Build configuration list for PBXNativeTarget "Finals App UMDTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B3481D7718256F1900002E0F /* Debug */,
