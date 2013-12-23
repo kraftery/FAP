@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B3481D3D18256F1800002E0F"
-               BuildableName = "FAP.app"
-               BlueprintName = "FAP"
-               ReferencedContainer = "container:FAP.xcodeproj">
+               BuildableName = "Finals App UMD.app"
+               BlueprintName = "Finals App UMD"
+               ReferencedContainer = "container:Finals App UMD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B3481D6118256F1900002E0F"
-               BuildableName = "FAPTests.xctest"
-               BlueprintName = "FAPTests"
-               ReferencedContainer = "container:FAP.xcodeproj">
+               BuildableName = "Finals App UMDTests.xctest"
+               BlueprintName = "Finals App UMDTests"
+               ReferencedContainer = "container:Finals App UMD.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3481D3D18256F1800002E0F"
-            BuildableName = "FAP.app"
-            BlueprintName = "FAP"
-            ReferencedContainer = "container:FAP.xcodeproj">
+            BuildableName = "Finals App UMD.app"
+            BlueprintName = "Finals App UMD"
+            ReferencedContainer = "container:Finals App UMD.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3481D3D18256F1800002E0F"
-            BuildableName = "FAP.app"
-            BlueprintName = "FAP"
-            ReferencedContainer = "container:FAP.xcodeproj">
+            BuildableName = "Finals App UMD.app"
+            BlueprintName = "Finals App UMD"
+            ReferencedContainer = "container:Finals App UMD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3481D3D18256F1800002E0F"
-            BuildableName = "FAP.app"
-            BlueprintName = "FAP"
-            ReferencedContainer = "container:FAP.xcodeproj">
+            BuildableName = "Finals App UMD.app"
+            BlueprintName = "Finals App UMD"
+            ReferencedContainer = "container:Finals App UMD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
