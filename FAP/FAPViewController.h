@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FAPViewController : UIViewController
+@property (retain, nonatomic) IBOutlet UIToolbar *about;
 
 @end
